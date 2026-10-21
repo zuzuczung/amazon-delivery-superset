@@ -1,0 +1,11 @@
+{
+  "Superset": "6.0.0",
+  "data_PostgreSQL": "17.10",
+  "metadata_PostgreSQL": "15 (separate Superset container)",
+  "data_container": "postgres-local",
+  "database": "tunglocaldb",
+  "source_relation": "public.amazon_delivery",
+  "Superset_connection_id": 2,
+  "official_API": "https://superset.apache.org/docs/api/",
+  "runtime_OpenAPI_sha256": "4e4f3638553bc1d9f6a3e88427cbc7077e5138adaf174308f3a10ad7783e0b53"
+}

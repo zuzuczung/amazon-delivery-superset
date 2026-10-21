@@ -1,0 +1,1256 @@
+{
+  "scenarios": [
+    {
+      "scenario": "all",
+      "visual": "p1-01",
+      "groups": 1,
+      "passed": true
+    },
+    {
+      "scenario": "all",
+      "visual": "p1-02",
+      "groups": 1,
+      "passed": true
+    },
+    {
+      "scenario": "all",
+      "visual": "p1-03",
+      "groups": 1,
+      "passed": true
+    },
+    {
+      "scenario": "all",
+      "visual": "p1-04",
+      "groups": 1,
+      "passed": true
+    },
+    {
+      "scenario": "all",
+      "visual": "p1-05",
+      "groups": 1,
+      "passed": true
+    },
+    {
+      "scenario": "all",
+      "visual": "p1-06",
+      "groups": 1,
+      "passed": true
+    },
+    {
+      "scenario": "all",
+      "visual": "p1-07",
+      "groups": 4,
+      "passed": true
+    },
+    {
+      "scenario": "all",
+      "visual": "p1-08",
+      "groups": 3,
+      "passed": true
+    },
+    {
+      "scenario": "all",
+      "visual": "p1-09",
+      "groups": 44,
+      "passed": true
+    },
+    {
+      "scenario": "all",
+      "visual": "p1-10",
+      "groups": 4,
+      "passed": true
+    },
+    {
+      "scenario": "all",
+      "visual": "p1-11",
+      "groups": 16,
+      "passed": true
+    },
+    {
+      "scenario": "all",
+      "visual": "p2-01",
+      "groups": 22,
+      "passed": true
+    },
+    {
+      "scenario": "all",
+      "visual": "p2-02",
+      "groups": 24,
+      "passed": true
+    },
+    {
+      "scenario": "all",
+      "visual": "p2-03",
+      "groups": 4,
+      "passed": true
+    },
+    {
+      "scenario": "all",
+      "visual": "p2-04",
+      "groups": 144,
+      "passed": true
+    },
+    {
+      "scenario": "all",
+      "visual": "p3-01",
+      "groups": 4,
+      "passed": true
+    },
+    {
+      "scenario": "all",
+      "visual": "p3-02",
+      "groups": 4,
+      "passed": true
+    },
+    {
+      "scenario": "all",
+      "visual": "p3-03",
+      "groups": 16,
+      "passed": true
+    },
+    {
+      "scenario": "all",
+      "visual": "p3-04",
+      "groups": 16,
+      "passed": true
+    },
+    {
+      "scenario": "all",
+      "visual": "p4-01",
+      "groups": 6,
+      "passed": true
+    },
+    {
+      "scenario": "all",
+      "visual": "p4-02",
+      "groups": 6,
+      "passed": true
+    },
+    {
+      "scenario": "all",
+      "visual": "p4-03",
+      "groups": 17,
+      "passed": true
+    },
+    {
+      "scenario": "all",
+      "visual": "p4-04",
+      "groups": 17,
+      "passed": true
+    },
+    {
+      "scenario": "all",
+      "visual": "p5-01",
+      "groups": 1,
+      "passed": true
+    },
+    {
+      "scenario": "all",
+      "visual": "p5-02",
+      "groups": 1,
+      "passed": true
+    },
+    {
+      "scenario": "all",
+      "visual": "p5-03",
+      "groups": 4,
+      "passed": true
+    },
+    {
+      "scenario": "all",
+      "visual": "p5-04",
+      "groups": 16,
+      "passed": true
+    },
+    {
+      "scenario": "all",
+      "visual": "p5-05",
+      "groups": 5,
+      "passed": true
+    },
+    {
+      "scenario": "date",
+      "visual": "p1-01",
+      "groups": 1,
+      "passed": true
+    },
+    {
+      "scenario": "date",
+      "visual": "p1-02",
+      "groups": 1,
+      "passed": true
+    },
+    {
+      "scenario": "date",
+      "visual": "p1-03",
+      "groups": 1,
+      "passed": true
+    },
+    {
+      "scenario": "date",
+      "visual": "p1-04",
+      "groups": 1,
+      "passed": true
+    },
+    {
+      "scenario": "date",
+      "visual": "p1-05",
+      "groups": 1,
+      "passed": true
+    },
+    {
+      "scenario": "date",
+      "visual": "p1-06",
+      "groups": 1,
+      "passed": true
+    },
+    {
+      "scenario": "date",
+      "visual": "p1-07",
+      "groups": 4,
+      "passed": true
+    },
+    {
+      "scenario": "date",
+      "visual": "p1-08",
+      "groups": 3,
+      "passed": true
+    },
+    {
+      "scenario": "date",
+      "visual": "p1-09",
+      "groups": 30,
+      "passed": true
+    },
+    {
+      "scenario": "date",
+      "visual": "p1-10",
+      "groups": 4,
+      "passed": true
+    },
+    {
+      "scenario": "date",
+      "visual": "p1-11",
+      "groups": 16,
+      "passed": true
+    },
+    {
+      "scenario": "date",
+      "visual": "p2-01",
+      "groups": 22,
+      "passed": true
+    },
+    {
+      "scenario": "date",
+      "visual": "p2-02",
+      "groups": 24,
+      "passed": true
+    },
+    {
+      "scenario": "date",
+      "visual": "p2-03",
+      "groups": 4,
+      "passed": true
+    },
+    {
+      "scenario": "date",
+      "visual": "p2-04",
+      "groups": 144,
+      "passed": true
+    },
+    {
+      "scenario": "date",
+      "visual": "p3-01",
+      "groups": 4,
+      "passed": true
+    },
+    {
+      "scenario": "date",
+      "visual": "p3-02",
+      "groups": 4,
+      "passed": true
+    },
+    {
+      "scenario": "date",
+      "visual": "p3-03",
+      "groups": 16,
+      "passed": true
+    },
+    {
+      "scenario": "date",
+      "visual": "p3-04",
+      "groups": 16,
+      "passed": true
+    },
+    {
+      "scenario": "date",
+      "visual": "p4-01",
+      "groups": 6,
+      "passed": true
+    },
+    {
+      "scenario": "date",
+      "visual": "p4-02",
+      "groups": 6,
+      "passed": true
+    },
+    {
+      "scenario": "date",
+      "visual": "p4-03",
+      "groups": 17,
+      "passed": true
+    },
+    {
+      "scenario": "date",
+      "visual": "p4-04",
+      "groups": 17,
+      "passed": true
+    },
+    {
+      "scenario": "date",
+      "visual": "p5-01",
+      "groups": 1,
+      "passed": true
+    },
+    {
+      "scenario": "date",
+      "visual": "p5-02",
+      "groups": 1,
+      "passed": true
+    },
+    {
+      "scenario": "date",
+      "visual": "p5-03",
+      "groups": 4,
+      "passed": true
+    },
+    {
+      "scenario": "date",
+      "visual": "p5-04",
+      "groups": 16,
+      "passed": true
+    },
+    {
+      "scenario": "date",
+      "visual": "p5-05",
+      "groups": 5,
+      "passed": true
+    },
+    {
+      "scenario": "category",
+      "visual": "p1-01",
+      "groups": 1,
+      "passed": true
+    },
+    {
+      "scenario": "category",
+      "visual": "p1-02",
+      "groups": 1,
+      "passed": true
+    },
+    {
+      "scenario": "category",
+      "visual": "p1-03",
+      "groups": 1,
+      "passed": true
+    },
+    {
+      "scenario": "category",
+      "visual": "p1-04",
+      "groups": 1,
+      "passed": true
+    },
+    {
+      "scenario": "category",
+      "visual": "p1-05",
+      "groups": 1,
+      "passed": true
+    },
+    {
+      "scenario": "category",
+      "visual": "p1-06",
+      "groups": 1,
+      "passed": true
+    },
+    {
+      "scenario": "category",
+      "visual": "p1-07",
+      "groups": 4,
+      "passed": true
+    },
+    {
+      "scenario": "category",
+      "visual": "p1-08",
+      "groups": 3,
+      "passed": true
+    },
+    {
+      "scenario": "category",
+      "visual": "p1-09",
+      "groups": 44,
+      "passed": true
+    },
+    {
+      "scenario": "category",
+      "visual": "p1-10",
+      "groups": 4,
+      "passed": true
+    },
+    {
+      "scenario": "category",
+      "visual": "p1-11",
+      "groups": 1,
+      "passed": true
+    },
+    {
+      "scenario": "category",
+      "visual": "p2-01",
+      "groups": 22,
+      "passed": true
+    },
+    {
+      "scenario": "category",
+      "visual": "p2-02",
+      "groups": 23,
+      "passed": true
+    },
+    {
+      "scenario": "category",
+      "visual": "p2-03",
+      "groups": 4,
+      "passed": true
+    },
+    {
+      "scenario": "category",
+      "visual": "p2-04",
+      "groups": 144,
+      "passed": true
+    },
+    {
+      "scenario": "category",
+      "visual": "p3-01",
+      "groups": 4,
+      "passed": true
+    },
+    {
+      "scenario": "category",
+      "visual": "p3-02",
+      "groups": 4,
+      "passed": true
+    },
+    {
+      "scenario": "category",
+      "visual": "p3-03",
+      "groups": 1,
+      "passed": true
+    },
+    {
+      "scenario": "category",
+      "visual": "p3-04",
+      "groups": 1,
+      "passed": true
+    },
+    {
+      "scenario": "category",
+      "visual": "p4-01",
+      "groups": 6,
+      "passed": true
+    },
+    {
+      "scenario": "category",
+      "visual": "p4-02",
+      "groups": 6,
+      "passed": true
+    },
+    {
+      "scenario": "category",
+      "visual": "p4-03",
+      "groups": 17,
+      "passed": true
+    },
+    {
+      "scenario": "category",
+      "visual": "p4-04",
+      "groups": 17,
+      "passed": true
+    },
+    {
+      "scenario": "category",
+      "visual": "p5-01",
+      "groups": 1,
+      "passed": true
+    },
+    {
+      "scenario": "category",
+      "visual": "p5-02",
+      "groups": 1,
+      "passed": true
+    },
+    {
+      "scenario": "category",
+      "visual": "p5-03",
+      "groups": 4,
+      "passed": true
+    },
+    {
+      "scenario": "category",
+      "visual": "p5-04",
+      "groups": 1,
+      "passed": true
+    },
+    {
+      "scenario": "category",
+      "visual": "p5-05",
+      "groups": 5,
+      "passed": true
+    },
+    {
+      "scenario": "combined",
+      "visual": "p1-01",
+      "groups": 1,
+      "passed": true
+    },
+    {
+      "scenario": "combined",
+      "visual": "p1-02",
+      "groups": 1,
+      "passed": true
+    },
+    {
+      "scenario": "combined",
+      "visual": "p1-03",
+      "groups": 1,
+      "passed": true
+    },
+    {
+      "scenario": "combined",
+      "visual": "p1-04",
+      "groups": 1,
+      "passed": true
+    },
+    {
+      "scenario": "combined",
+      "visual": "p1-05",
+      "groups": 1,
+      "passed": true
+    },
+    {
+      "scenario": "combined",
+      "visual": "p1-06",
+      "groups": 1,
+      "passed": true
+    },
+    {
+      "scenario": "combined",
+      "visual": "p1-07",
+      "groups": 1,
+      "passed": true
+    },
+    {
+      "scenario": "combined",
+      "visual": "p1-08",
+      "groups": 1,
+      "passed": true
+    },
+    {
+      "scenario": "combined",
+      "visual": "p1-09",
+      "groups": 30,
+      "passed": true
+    },
+    {
+      "scenario": "combined",
+      "visual": "p1-10",
+      "groups": 1,
+      "passed": true
+    },
+    {
+      "scenario": "combined",
+      "visual": "p1-11",
+      "groups": 1,
+      "passed": true
+    },
+    {
+      "scenario": "combined",
+      "visual": "p2-01",
+      "groups": 6,
+      "passed": true
+    },
+    {
+      "scenario": "combined",
+      "visual": "p2-02",
+      "groups": 4,
+      "passed": true
+    },
+    {
+      "scenario": "combined",
+      "visual": "p2-03",
+      "groups": 1,
+      "passed": true
+    },
+    {
+      "scenario": "combined",
+      "visual": "p2-04",
+      "groups": 40,
+      "passed": true
+    },
+    {
+      "scenario": "combined",
+      "visual": "p3-01",
+      "groups": 4,
+      "passed": true
+    },
+    {
+      "scenario": "combined",
+      "visual": "p3-02",
+      "groups": 4,
+      "passed": true
+    },
+    {
+      "scenario": "combined",
+      "visual": "p3-03",
+      "groups": 1,
+      "passed": true
+    },
+    {
+      "scenario": "combined",
+      "visual": "p3-04",
+      "groups": 1,
+      "passed": true
+    },
+    {
+      "scenario": "combined",
+      "visual": "p4-01",
+      "groups": 6,
+      "passed": true
+    },
+    {
+      "scenario": "combined",
+      "visual": "p4-02",
+      "groups": 6,
+      "passed": true
+    },
+    {
+      "scenario": "combined",
+      "visual": "p4-03",
+      "groups": 4,
+      "passed": true
+    },
+    {
+      "scenario": "combined",
+      "visual": "p4-04",
+      "groups": 4,
+      "passed": true
+    },
+    {
+      "scenario": "combined",
+      "visual": "p5-01",
+      "groups": 1,
+      "passed": true
+    },
+    {
+      "scenario": "combined",
+      "visual": "p5-02",
+      "groups": 1,
+      "passed": true
+    },
+    {
+      "scenario": "combined",
+      "visual": "p5-03",
+      "groups": 1,
+      "passed": true
+    },
+    {
+      "scenario": "combined",
+      "visual": "p5-04",
+      "groups": 1,
+      "passed": true
+    },
+    {
+      "scenario": "combined",
+      "visual": "p5-05",
+      "groups": 2,
+      "passed": true
+    },
+    {
+      "scenario": "no_data",
+      "visual": "p1-01",
+      "groups": 1,
+      "passed": true
+    },
+    {
+      "scenario": "no_data",
+      "visual": "p1-02",
+      "groups": 1,
+      "passed": true
+    },
+    {
+      "scenario": "no_data",
+      "visual": "p1-03",
+      "groups": 1,
+      "passed": true
+    },
+    {
+      "scenario": "no_data",
+      "visual": "p1-04",
+      "groups": 1,
+      "passed": true
+    },
+    {
+      "scenario": "no_data",
+      "visual": "p1-05",
+      "groups": 1,
+      "passed": true
+    },
+    {
+      "scenario": "no_data",
+      "visual": "p1-06",
+      "groups": 1,
+      "passed": true
+    },
+    {
+      "scenario": "no_data",
+      "visual": "p1-07",
+      "groups": 0,
+      "passed": true
+    },
+    {
+      "scenario": "no_data",
+      "visual": "p1-08",
+      "groups": 0,
+      "passed": true
+    },
+    {
+      "scenario": "no_data",
+      "visual": "p1-09",
+      "groups": 0,
+      "passed": true
+    },
+    {
+      "scenario": "no_data",
+      "visual": "p1-10",
+      "groups": 0,
+      "passed": true
+    },
+    {
+      "scenario": "no_data",
+      "visual": "p1-11",
+      "groups": 0,
+      "passed": true
+    },
+    {
+      "scenario": "no_data",
+      "visual": "p2-01",
+      "groups": 0,
+      "passed": true
+    },
+    {
+      "scenario": "no_data",
+      "visual": "p2-02",
+      "groups": 0,
+      "passed": true
+    },
+    {
+      "scenario": "no_data",
+      "visual": "p2-03",
+      "groups": 0,
+      "passed": true
+    },
+    {
+      "scenario": "no_data",
+      "visual": "p2-04",
+      "groups": 0,
+      "passed": true
+    },
+    {
+      "scenario": "no_data",
+      "visual": "p3-01",
+      "groups": 0,
+      "passed": true
+    },
+    {
+      "scenario": "no_data",
+      "visual": "p3-02",
+      "groups": 0,
+      "passed": true
+    },
+    {
+      "scenario": "no_data",
+      "visual": "p3-03",
+      "groups": 0,
+      "passed": true
+    },
+    {
+      "scenario": "no_data",
+      "visual": "p3-04",
+      "groups": 0,
+      "passed": true
+    },
+    {
+      "scenario": "no_data",
+      "visual": "p4-01",
+      "groups": 0,
+      "passed": true
+    },
+    {
+      "scenario": "no_data",
+      "visual": "p4-02",
+      "groups": 0,
+      "passed": true
+    },
+    {
+      "scenario": "no_data",
+      "visual": "p4-03",
+      "groups": 0,
+      "passed": true
+    },
+    {
+      "scenario": "no_data",
+      "visual": "p4-04",
+      "groups": 0,
+      "passed": true
+    },
+    {
+      "scenario": "no_data",
+      "visual": "p5-01",
+      "groups": 1,
+      "passed": true
+    },
+    {
+      "scenario": "no_data",
+      "visual": "p5-02",
+      "groups": 1,
+      "passed": true
+    },
+    {
+      "scenario": "no_data",
+      "visual": "p5-03",
+      "groups": 0,
+      "passed": true
+    },
+    {
+      "scenario": "no_data",
+      "visual": "p5-04",
+      "groups": 0,
+      "passed": true
+    },
+    {
+      "scenario": "no_data",
+      "visual": "p5-05",
+      "groups": 0,
+      "passed": true
+    },
+    {
+      "scenario": "reset",
+      "visual": "p1-01",
+      "groups": 1,
+      "passed": true
+    },
+    {
+      "scenario": "reset",
+      "visual": "p1-02",
+      "groups": 1,
+      "passed": true
+    },
+    {
+      "scenario": "reset",
+      "visual": "p1-03",
+      "groups": 1,
+      "passed": true
+    },
+    {
+      "scenario": "reset",
+      "visual": "p1-04",
+      "groups": 1,
+      "passed": true
+    },
+    {
+      "scenario": "reset",
+      "visual": "p1-05",
+      "groups": 1,
+      "passed": true
+    },
+    {
+      "scenario": "reset",
+      "visual": "p1-06",
+      "groups": 1,
+      "passed": true
+    },
+    {
+      "scenario": "reset",
+      "visual": "p1-07",
+      "groups": 4,
+      "passed": true
+    },
+    {
+      "scenario": "reset",
+      "visual": "p1-08",
+      "groups": 3,
+      "passed": true
+    },
+    {
+      "scenario": "reset",
+      "visual": "p1-09",
+      "groups": 44,
+      "passed": true
+    },
+    {
+      "scenario": "reset",
+      "visual": "p1-10",
+      "groups": 4,
+      "passed": true
+    },
+    {
+      "scenario": "reset",
+      "visual": "p1-11",
+      "groups": 16,
+      "passed": true
+    },
+    {
+      "scenario": "reset",
+      "visual": "p2-01",
+      "groups": 22,
+      "passed": true
+    },
+    {
+      "scenario": "reset",
+      "visual": "p2-02",
+      "groups": 24,
+      "passed": true
+    },
+    {
+      "scenario": "reset",
+      "visual": "p2-03",
+      "groups": 4,
+      "passed": true
+    },
+    {
+      "scenario": "reset",
+      "visual": "p2-04",
+      "groups": 144,
+      "passed": true
+    },
+    {
+      "scenario": "reset",
+      "visual": "p3-01",
+      "groups": 4,
+      "passed": true
+    },
+    {
+      "scenario": "reset",
+      "visual": "p3-02",
+      "groups": 4,
+      "passed": true
+    },
+    {
+      "scenario": "reset",
+      "visual": "p3-03",
+      "groups": 16,
+      "passed": true
+    },
+    {
+      "scenario": "reset",
+      "visual": "p3-04",
+      "groups": 16,
+      "passed": true
+    },
+    {
+      "scenario": "reset",
+      "visual": "p4-01",
+      "groups": 6,
+      "passed": true
+    },
+    {
+      "scenario": "reset",
+      "visual": "p4-02",
+      "groups": 6,
+      "passed": true
+    },
+    {
+      "scenario": "reset",
+      "visual": "p4-03",
+      "groups": 17,
+      "passed": true
+    },
+    {
+      "scenario": "reset",
+      "visual": "p4-04",
+      "groups": 17,
+      "passed": true
+    },
+    {
+      "scenario": "reset",
+      "visual": "p5-01",
+      "groups": 1,
+      "passed": true
+    },
+    {
+      "scenario": "reset",
+      "visual": "p5-02",
+      "groups": 1,
+      "passed": true
+    },
+    {
+      "scenario": "reset",
+      "visual": "p5-03",
+      "groups": 4,
+      "passed": true
+    },
+    {
+      "scenario": "reset",
+      "visual": "p5-04",
+      "groups": 16,
+      "passed": true
+    },
+    {
+      "scenario": "reset",
+      "visual": "p5-05",
+      "groups": 5,
+      "passed": true
+    }
+  ],
+  "PDF_baselines": [
+    {
+      "metric": "avg_time",
+      "PDF": 124.91,
+      "SQL": 124.91447489002933,
+      "passed": true,
+      "scope": "dashboard PDF page 1; all filters shown as All; displayed precision only"
+    },
+    {
+      "metric": "median",
+      "PDF": 125.0,
+      "SQL": 125.0,
+      "passed": true,
+      "scope": "dashboard PDF page 1; all filters shown as All; displayed precision only"
+    },
+    {
+      "metric": "p90",
+      "PDF": 195.0,
+      "SQL": 195.0,
+      "passed": true,
+      "scope": "dashboard PDF page 1; all filters shown as All; displayed precision only"
+    },
+    {
+      "metric": "distance",
+      "PDF": 9.73,
+      "SQL": 9.732170546187684,
+      "passed": true,
+      "scope": "dashboard PDF page 1; all filters shown as All; displayed precision only"
+    },
+    {
+      "metric": "long_rate",
+      "PDF": "23.1%",
+      "SQL": 0.23070931085043989,
+      "passed": true
+    },
+    {
+      "metric": "orders",
+      "PDF": 43648,
+      "SQL": 43648,
+      "passed": true,
+      "source": "PDF page 5 total row; page 1 only shows 44K"
+    },
+    {
+      "area": "Semi-Urban",
+      "metric": "orders",
+      "PDF": 152,
+      "SQL": 152,
+      "passed": true,
+      "source": "PDF page 5 table; displayed precision"
+    },
+    {
+      "area": "Semi-Urban",
+      "metric": "p90",
+      "PDF": 269.5,
+      "SQL": 269.5,
+      "passed": true,
+      "source": "PDF page 5 table; displayed precision"
+    },
+    {
+      "area": "Semi-Urban",
+      "metric": "pickup",
+      "PDF": 10.07,
+      "SQL": 10.06578947368421,
+      "passed": true,
+      "source": "PDF page 5 table; displayed precision"
+    },
+    {
+      "area": "Semi-Urban",
+      "metric": "long_rate",
+      "PDF": 94.7,
+      "SQL": 0.9473684210526315,
+      "passed": true,
+      "source": "PDF page 5 table; displayed precision"
+    },
+    {
+      "area": "Semi-Urban",
+      "metric": "distance",
+      "PDF": 12.87,
+      "SQL": 12.874934210526316,
+      "passed": true,
+      "source": "PDF page 5 table; displayed precision"
+    },
+    {
+      "area": "Semi-Urban",
+      "metric": "avg_time",
+      "PDF": 238.55,
+      "SQL": 238.55263157894737,
+      "passed": true,
+      "source": "PDF page 5 table; displayed precision"
+    },
+    {
+      "area": "Metropolitan",
+      "metric": "orders",
+      "PDF": 32634,
+      "SQL": 32634,
+      "passed": true,
+      "source": "PDF page 5 table; displayed precision"
+    },
+    {
+      "area": "Metropolitan",
+      "metric": "p90",
+      "PDF": 200,
+      "SQL": 200.0,
+      "passed": true,
+      "source": "PDF page 5 table; displayed precision"
+    },
+    {
+      "area": "Metropolitan",
+      "metric": "pickup",
+      "PDF": 9.98,
+      "SQL": 9.976404976404977,
+      "passed": true,
+      "source": "PDF page 5 table; displayed precision"
+    },
+    {
+      "area": "Metropolitan",
+      "metric": "long_rate",
+      "PDF": 25.9,
+      "SQL": 0.2586259729116872,
+      "passed": true,
+      "source": "PDF page 5 table; displayed precision"
+    },
+    {
+      "area": "Metropolitan",
+      "metric": "distance",
+      "PDF": 9.93,
+      "SQL": 9.928010357296072,
+      "passed": true,
+      "source": "PDF page 5 table; displayed precision"
+    },
+    {
+      "area": "Metropolitan",
+      "metric": "avg_time",
+      "PDF": 129.71,
+      "SQL": 129.7069620641049,
+      "passed": true,
+      "source": "PDF page 5 table; displayed precision"
+    },
+    {
+      "area": "Urban",
+      "metric": "orders",
+      "PDF": 9726,
+      "SQL": 9726,
+      "passed": true,
+      "source": "PDF page 5 table; displayed precision"
+    },
+    {
+      "area": "Urban",
+      "metric": "p90",
+      "PDF": 175,
+      "SQL": 175.0,
+      "passed": true,
+      "source": "PDF page 5 table; displayed precision"
+    },
+    {
+      "area": "Urban",
+      "metric": "pickup",
+      "PDF": 10.03,
+      "SQL": 10.026732469668929,
+      "passed": true,
+      "source": "PDF page 5 table; displayed precision"
+    },
+    {
+      "area": "Urban",
+      "metric": "long_rate",
+      "PDF": 13.9,
+      "SQL": 0.13942011104256632,
+      "passed": true,
+      "source": "PDF page 5 table; displayed precision"
+    },
+    {
+      "area": "Urban",
+      "metric": "distance",
+      "PDF": 9.09,
+      "SQL": 9.089524984577421,
+      "passed": true,
+      "source": "PDF page 5 table; displayed precision"
+    },
+    {
+      "area": "Urban",
+      "metric": "avg_time",
+      "PDF": 109.44,
+      "SQL": 109.44262800740283,
+      "passed": true,
+      "source": "PDF page 5 table; displayed precision"
+    },
+    {
+      "area": "Other",
+      "metric": "orders",
+      "PDF": 1136,
+      "SQL": 1136,
+      "passed": true,
+      "source": "PDF page 5 table; displayed precision"
+    },
+    {
+      "area": "Other",
+      "metric": "p90",
+      "PDF": 165,
+      "SQL": 165.0,
+      "passed": true,
+      "source": "PDF page 5 table; displayed precision"
+    },
+    {
+      "area": "Other",
+      "metric": "pickup",
+      "PDF": 10.11,
+      "SQL": 10.105633802816902,
+      "passed": true,
+      "source": "PDF page 5 table; displayed precision"
+    },
+    {
+      "area": "Other",
+      "metric": "long_rate",
+      "PDF": 11.4,
+      "SQL": 0.11443661971830986,
+      "passed": true,
+      "source": "PDF page 5 table; displayed precision"
+    },
+    {
+      "area": "Other",
+      "metric": "distance",
+      "PDF": 9.19,
+      "SQL": 9.187834507042254,
+      "passed": true,
+      "source": "PDF page 5 table; displayed precision"
+    },
+    {
+      "area": "Other",
+      "metric": "avg_time",
+      "PDF": 104.5,
+      "SQL": 104.49911971830986,
+      "passed": true,
+      "source": "PDF page 5 table; displayed precision"
+    }
+  ],
+  "failures": [],
+  "numerical_tolerance": {
+    "counts": "exact",
+    "other": "abs 1e-8 / rel 1e-10"
+  },
+  "Power_BI_filtered_states": "chưa xác minh: no filtered Power BI exports supplied",
+  "Power_BI_DAX": "chưa xác minh: no PBIX, PBIP, semantic model or DAX supplied",
+  "query_tests": "168 chart requests plus 6 SQL comparisons against independently calculated CSV aggregates",
+  "native_UI": "see browser-QA.md; API requests alone do not prove browser filter behavior"
+}

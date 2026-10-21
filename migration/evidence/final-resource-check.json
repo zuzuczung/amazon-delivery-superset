@@ -1,0 +1,12 @@
+{
+  "tabs": 5,
+  "charts": 28,
+  "datasets": 4,
+  "native_filters": 6,
+  "native_filter_type": "NATIVE_FILTER on all filters",
+  "export_credentials": "redacted placeholders verified",
+  "unrelated_resource_counts": "original + only 28 project charts, 4 project datasets, 1 project dashboard",
+  "branch": "feat/superset-migration",
+  "pushed": false,
+  "merged": false
+}

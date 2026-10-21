@@ -1,0 +1,59 @@
+{
+  "expected_project_inventory": {
+    "chart": 28,
+    "dataset": 4,
+    "dashboard": 1
+  },
+  "actual_project_inventory": {
+    "chart": 28,
+    "dataset": 4,
+    "dashboard": 1
+  },
+  "run_repeated": true,
+  "resource_ids": {
+    "database_id": 2,
+    "datasets": {
+      "base": 37,
+      "area_matrix": 38,
+      "hour_matrix": 39,
+      "area_totals": 40
+    },
+    "charts": {
+      "p1-01": 175,
+      "p1-02": 176,
+      "p1-03": 177,
+      "p1-04": 178,
+      "p1-05": 179,
+      "p1-06": 180,
+      "p1-07": 181,
+      "p1-08": 182,
+      "p1-09": 183,
+      "p1-10": 184,
+      "p1-11": 185,
+      "p2-01": 186,
+      "p2-02": 187,
+      "p2-03": 188,
+      "p2-04": 189,
+      "p3-01": 190,
+      "p3-02": 191,
+      "p3-03": 192,
+      "p3-04": 193,
+      "p4-01": 194,
+      "p4-02": 195,
+      "p4-03": 196,
+      "p4-04": 197,
+      "p5-01": 198,
+      "p5-02": 199,
+      "p5-03": 200,
+      "p5-04": 201,
+      "p5-05": 202
+    },
+    "dashboard_id": 17,
+    "dashboard_url": "http://localhost:8088/superset/dashboard/amazon-delivery-intelligence/",
+    "source": "reports/amazon_delivery_dashboard.pdf",
+    "pages": 5,
+    "scope_confirmation": "User corrected 4 pages to 5 on 2026-10-21",
+    "source_tab_names": "unavailable; Trang 1..5 are positional navigation labels"
+  },
+  "unrelated_resources": "scripts update only deterministic project UUIDs; Superset database connection reused without mutation"
+}

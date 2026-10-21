@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-21",
+  "dashboard": "http://localhost:8088/superset/dashboard/amazon-delivery-intelligence/",
+  "observed_UI_results": {
+    "all": {
+      "orders": 43648,
+      "avg_time": 124.91,
+      "long_rate_percent": 23.1
+    },
+    "category_grocery": {
+      "orders": 2688,
+      "avg_time": 26.54
+    },
+    "grocery_and_jam": {
+      "orders": 876,
+      "avg_time": 31.2
+    },
+    "march_2022": {
+      "orders": 30588,
+      "avg_time": 124.76,
+      "long_rate_percent": 23.0
+    },
+    "no_data_2023_01": {
+      "orders": 0,
+      "averages_and_rates": "No data"
+    },
+    "clear_all_then_apply": {
+      "orders": 43648,
+      "avg_time": 124.91
+    }
+  },
+  "fixed_interop_issues": [
+    "Chart API dashboard association",
+    "filter_time targets [{}]",
+    "native filter type NATIVE_FILTER required for reset and filter state"
+  ],
+  "screenshots": "migration/evidence/screenshots/",
+  "scope_check": "Category excluded on page 3; retained on return to page 1",
+  "remaining_differences": "see docs/browser-QA.md",
+  "Power_BI_filtered_baseline": "chưa xác minh"
+}

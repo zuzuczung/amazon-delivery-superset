@@ -1,0 +1,119 @@
+{
+  "rows": 43648,
+  "raw_rows": 43739,
+  "columns": 25,
+  "duplicate_ids": 0,
+  "duplicate_rows": 0,
+  "missing": {
+    "Order_ID": 0,
+    "Order_Date": 0,
+    "Order_Time": 0,
+    "Pickup_Time": 0,
+    "Order_Hour": 0,
+    "Day_Name": 0,
+    "Day_Number": 0,
+    "Agent_Age": 0,
+    "Age_Group": 0,
+    "Agent_Rating": 54,
+    "Rating_Group": 54,
+    "Store_Latitude": 0,
+    "Store_Longitude": 0,
+    "Drop_Latitude": 0,
+    "Drop_Longitude": 0,
+    "Distance_Km": 0,
+    "Pickup_Delay_Min": 0,
+    "Weather": 0,
+    "Traffic": 0,
+    "Vehicle": 0,
+    "Area": 0,
+    "Category": 0,
+    "Delivery_Time": 0,
+    "Delivery_Band": 0,
+    "Long_Delivery_Flag": 0
+  },
+  "date_min": "2022-02-11",
+  "date_max": "2022-04-06",
+  "sha256": {
+    "data/amazon_delivery_cleaned.csv": "07fa8dec4252148f9b9d48908dadb305245c12e873f4ce81e767c4fd03a0b148",
+    "data/amazon_delivery.csv": "89be03ff957caa02cebce5963e185629a50190a6df946a2d3ca33132318de161",
+    "reports/amazon_delivery_report.pdf": "b6cdfacddb159ec571c779025602b5a9539d768e1347eecbde42a8e86b99379b",
+    "reports/amazon_delivery_dashboard.pdf": "2ce12eeff8a2711db21dc4bd589ea1d437d8b0901dac57a50e491555dd0b244f"
+  },
+  "means": {
+    "Delivery_Time": 124.91447489002933,
+    "Distance_Km": 9.732170546187684,
+    "Pickup_Delay_Min": 9.991293988269796,
+    "Agent_Rating": 4.635286966096252
+  },
+  "ranges": {
+    "Delivery_Time": [
+      10.0,
+      270.0
+    ],
+    "Distance_Km": [
+      1.47,
+      20.97
+    ],
+    "Pickup_Delay_Min": [
+      5.0,
+      15.0
+    ],
+    "Agent_Age": [
+      20.0,
+      39.0
+    ],
+    "Agent_Rating": [
+      2.5,
+      5.0
+    ]
+  },
+  "long_flag_mismatch_gt_160": 0,
+  "invalid_coordinate_rows": 0,
+  "zero_coordinate_rows": 3495,
+  "raw_whitespace": {
+    "Traffic": 43739,
+    "Weather": 0,
+    "Area": 42601,
+    "Vehicle": 40181
+  },
+  "raw_missing": {
+    "Order_ID": 0,
+    "Agent_Age": 0,
+    "Agent_Rating": 54,
+    "Store_Latitude": 0,
+    "Store_Longitude": 0,
+    "Drop_Latitude": 0,
+    "Drop_Longitude": 0,
+    "Order_Date": 0,
+    "Order_Time": 91,
+    "Pickup_Time": 0,
+    "Weather": 91,
+    "Traffic": 91,
+    "Vehicle": 0,
+    "Area": 0,
+    "Delivery_Time": 0,
+    "Category": 0
+  },
+  "raw_only_ids": 91,
+  "clean_only_ids": 0,
+  "pickup_midnight_rows": 828,
+  "pickup_delay_modulo_mismatches": 0,
+  "database": {
+    "rows": 43648,
+    "distinct_ids": 43648,
+    "null_ids": 0,
+    "date_min": "2022-02-11",
+    "date_max": "2022-04-06",
+    "avg_delivery_time": 124.91447489002933,
+    "avg_distance": 9.732170546186484,
+    "long_delivery_rate": 0.23070931085043989,
+    "null_rating": 54,
+    "flag_mismatches": 0
+  },
+  "database_csv_comparison": {
+    "missing_ids": 0,
+    "extra_ids": 0,
+    "different_rows": 0
+  },
+  "database_fingerprint": "42323e35beb9071b32531257f1e0aa38"
+}

@@ -1,0 +1,12 @@
+{
+  "file": "migration/exports/amazon_delivery_superset_6.zip",
+  "inventory": {
+    "dashboards": 1,
+    "charts": 28,
+    "datasets": 4,
+    "databases": 1
+  },
+  "format": "official Superset dashboard export, version 1.0.0, from running Superset 6.0.0",
+  "credentials": "database URI user/password replaced; configure existing DB or provide credentials at import",
+  "import_status": "not reimported into live instance to avoid overwriting other shared database configuration"
+}
