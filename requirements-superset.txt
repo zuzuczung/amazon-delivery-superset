@@ -1,0 +1,3 @@
+# Migration runs outside Superset; no installation inside the running stack.
+requests>=2.32.4,<3
+PyYAML>=6.0.2,<7
