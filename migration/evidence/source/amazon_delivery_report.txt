@@ -1,0 +1,369 @@
+
+--- PAGE 1 ---
+Power BI Desktop
+Amazon Delivery ReportData Date: 2022
+Filter Area
+Area
+All
+
+
+Category
+All
+
+
+Weather
+All
+
+
+Order_Date 
+2/11/2022 4/6/2022 
+Overview Environment Agent &Product DeliveryFlow CostEfficiency Conclusion
+Total Orders
+44K
+Avg Delivery Time (Min)
+124.92
+On Time Percentage
+48.80%
+Worst Day (Highest Delivery Time)
+4/6/2022
+Number of Orders by Month
+0K
+10K
+20K
+30K
+Month
+Count of Order
+February March April
+On-Time vs Late Rate
+22.32K (51.2%)
+21.27K (48.8%)
+Delivery_Status
+Late
+On Time
+Number of Orders by Day
+500
+1,000
+1,500
+2,000
+2,500
+Day
+Count of Order
+0 10 20 30
+On-Time vs Late Rate
+32.59K (74.76%)
+9.72K (22.29%)
+Area
+Metropolitian
+Urban
+Other
+Semi-Urban
+--- PAGE 2 ---
+Power BI Desktop
+Amazon Delivery ReportData Date: 2022
+Filter Area
+Area
+All
+
+
+Category
+All
+
+
+Weather
+All
+
+
+Order_Date 
+2/11/2022 4/6/2022 
+Overview Environment Agent &Product DeliveryFlow CostEfficiency Conclusion
+Most Delay Traffic
+Medium
+Fastest Delivery Vehicle
+van
+Impact of Traffic on Delivery Time by Weather
+0
+100
+200
+Weather
+Avg Delivery Time
+Cloudy Fog Windy Stormy Sandst… Sunny
+Traffic High Jam Low Medium
+Most Delay Wheather
+Windy
+On-Time vs Late Average Delivery Time by Vehicle
+0
+200
+Vehicle
+Avg Delivery Time
+motorcycle scooter van
+Delivery_Status Late On Time
+On-Time vs Late Delivery Distribution by Weather
+0
+200
+Weather
+Avg_Delivery_Time
+Cloudy Fog Windy Stormy Sandsto… Sunny
+Delivery Status Late On Time
+Avg Delivery Distance (km)
+26.76
+Vehicle on Are by Order
+0K
+10K
+20K
+Area
+Count of Orders
+Metropolitian Urban Other Semi-Urban
+Vehicle motorcyclescooter van
+--- PAGE 3 ---
+Power BI Desktop
+Amazon Delivery ReportData Date: 2022
+Filter Area
+Area
+All
+
+
+Category
+All
+
+
+Order_Date 
+2/11/2022 4/6/2022 
+Overview Environment Agent &Product
+DeliveryFlow CostEfficiency Conclusion
+Avg Agent Age
+29.56
+Avg Agent Rating
+4.64
+Fastest Delivery
+Grocery
+Avg Rating By Agent Age
+4.6
+4.7
+2,000
+2,200
+Agent Age
+Avg of Agent Rating
+Count of Orders
+20 25 30 35 40
+Avg of Agent RatingCount of Orders
+On-Time vs Late Order By Category
+0K
+2K
+Category
+Count of Orders
+Electro…BooksJewelryToys
+SkincareSnacksOutdoorsApparelSportsGroceryPet Sup…HomeCosmet…KitchenClothingShoes
+Delivery Status Late On Time
+Category Avg Delivery Time
+ 
+Count of Orders Avg Distance
+Grocery 26.54 2687 24.56
+Toys 129.37 2771 28.81
+Clothing 130.47 2657 26.16
+Jewelry 130.78 2793 25.37
+Electronics 130.87 2841 23.25
+Home 130.94 2678 35.24
+Books 131.06 2813 32.07
+Outdoors 131.15 2739 18.70
+Shoes 131.15 2655 36.05
+Pet Supplies 131.35 2679 26.45
+Snacks 131.91 2762 27.62
+Apparel 132.00 2718 23.65
+Skincare 132.10 2764 20.00
+Sports 132.31 2708 33.32
+Kitchen 132.36 2663 24.18
+Cosmetics 132.94 2666 22.99
+Total 124.92 43594 26.76
+Slowest Delivery
+Cosmetics
+Vehicle
+All
+
+
+--- PAGE 4 ---
+Power BI Desktop
+Amazon Delivery ReportData Date: 2022
+Filter Area
+Area
+All
+
+
+Category
+All
+
+
+Order_Date 
+2/11/2022 4/6/2022 
+Overview Environment Agent &Product DeliveryFlow
+CostEfficiency Conclusion
+Avg Order to Pickup Time
+9.99
+Avg_Delivery_Time
+124.92
+Delivery Stage Comparison by Area
+0
+50
+100
+150
+200
+Area
+Avg Order to Pickup Time and Avg Delivery Time
+Other Semi-Urban Urban Metropolitian
+Avg Order to Pickup Time Avg Delivery Time
+Vehicle
+All
+
+ Delivery Stage Comparison by Product
+0
+100
+Category
+Avg Order to Pickup …
+ClothingGrocerySnacksToys
+OutdoorsKitchenSkincareCosmet…HomeElectro…ShoesSportsBooksApparelJewelryPet Sup…
+Avg Order to Pickup TimeAvg Delivery Time
+Pct Late Pickup
+33.31%
+Pct Late Delivery
+14.67%
+Delivery Funnel: Order to On-Time Delivery
+100%
+48.8%
+Orders Recieved
+Orders Picked Up
+Orders On-time
+44K
+44K
+21K
+--- PAGE 5 ---
+Power BI Desktop
+Amazon Delivery ReportData Date: 2022
+Filter Area
+Area
+All
+
+
+Category
+All
+
+
+Order_Date 
+2/11/2022 4/6/2022 
+Overview Environment Agent &Product DeliveryFlow CostEfficiency Conclusion
+Total Orders
+44K
+Avg Cost per Order ($)
+8.70
+Delivery Stage Comparison by Area
+0
+5
+10
+Vehicle
+Avg Cost Per Order
+van motorcycle scooter
+Vehicle
+All
+
+ Top 5 Most Cost-Efficient Category
+0 5 10
+Avg Cost Per Order
+Category
+Grocery
+Toys
+Clothing
+Jewelry
+Home
+Total Delivery (km)
+1.17M
+Pct Late Delivery
+32.52%
+Avg Cost by Area
+14.31644… (36.75%)
+8.88978430… (22.82%)
+8.1016… (20.7…)
+7.6535682… (19.64%)
+Area
+Semi-Urban
+Metropolitian
+Urban
+Other
+Category Avg Cost Per Order
+ 
+Avg Cost per Km Orders
+Grocery 3.78 15.40% 2687
+Toys 8.92 30.97% 2771
+Clothing 8.99 34.35% 2657
+Jewelry 8.99 35.44% 2793
+Home 9.01 25.57% 2678
+Total 8.70 32.52% 43594
+
+--- PAGE 6 ---
+Power BI Desktop
+Amazon Delivery ReportData Date: 2022 Overview Environment Agent &Product DeliveryFlow CostEfficiency Conclusion
+Avg Cost Per Order
+8.70
+van
+10.85
+motorcycle
+8.60
+scooter
+8.37
+Semi-Urban
+17.55
+Metropolitian
+11.04
+Urban
+10.29
+Sports
+11.59
+Cosmetics
+11.53
+Apparel
+11.51
+High
+12.63
+Jam
+12.52
+Medium
+11.19
+Cloudy
+13.38
+Fog
+12.56
+Stormy
+12.42
+   
+Vehicle ×
+van
+Area ×
+Metropolitian
+Category ×
+Cosmetics
+Traffic ×
+High
+Weather ×
+General Conclusion
+Delivery performance: Only 48.8% of orders are delivered on time. Delays are common in Semi-Urban 
+areas and in Windy, Medium Traffic conditions.
+Delivery vehicle: Van is fastest but more expensive. Motorcycle and Scooter balance cost and time for 
+Metropolitan areas.
+Effective shipper profile: Shipper aged 29-30, rating 4.6-4.7, operating mainly in Metropolitan, using 
+Motorcycle.
+Delivery cost by area & product: Semi-Urban has the highest cost. Grocery is the cost-optimized product 
+group, whereas Jewelry and Home have high costs.
+Delivery operation flow: The bottleneck occurs at the last mile of delivery: Pickup to On-time rate is only 
+48.8% despite Pickup rate being almost 100%.
+Overall operating cost: Average cost 8.70K VND/order, high cost ratio concentrated in Semi-Urban and 
+Van areas.
+Several Suggestions
+Optimize operational resources: 
+•Allocate Motorcycle/Scooter to Metropolitan to reduce costs.
+•Review Van for Semi-Urban to balance speed and costs.
+Improve shipper support policies:
+•Apply bonus or financial support policy when delivering in Windy or Traffic Medium+ conditions.
+•Train to handle traffic and weather incidents.
+Optimize costs by product group:
+•Prioritize promoting Grocery services.
+•Review Jewelry and Home shipping policies to control costs.
+Adjust operational processes:
+•Develop optimal delivery routes for Semi-Urban.
+•Increase on-time delivery rate by optimizing pickup and final delivery processes.

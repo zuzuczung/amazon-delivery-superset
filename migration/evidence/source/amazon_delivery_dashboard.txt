@@ -1,0 +1,300 @@
+
+--- PAGE 1 ---
+Total Orders
+44K
+A verage Delivery Time
+124.91
+Median Delivery Time
+125.00
+P90 Delivery Time
+195.00
+A verage Distance
+9.73
+Long Delivery Rate
+23.1%
+Order_Date
+2/11/2022  4/6/2022 
+T raffic
+A ll 
+W eather
+A ll 
+V ehicl e
+A ll 
+Area
+A ll 
+Category
+A ll 
+A v er a g e D el iv er y  T im e b y  T r a f f ic
+0 100
+Average Delivery Time
+Traffic
+Jam
+High
+Medium
+Low
+T ota l  O r d er s  b y  V ehi c l e
+(58.47%)
+(33.47%)
+4K (8.07%)
+26K
+15K
+44K
+V e h i c l e
+m ot or c y c le
+s c oot e r
+v a n
+A v er a g e D el iv er y  T im e b y  O r d er _D a te
+100
+150
+Order_Date
+Average Delivery Time
+Feb 20 Mar 06 Mar 20 Apr 03
+A v er a g e D el iv er y  T im e b y  A r ea
+0
+200
+Area
+Average Delivery Time
+Semi-Urban Metropolitan Urban Other
+T ota l  O r d er s  b y  Ca teg or y
+0K 1K 2K 3K
+Total Orders
+Category
+Electronics
+Books
+Jewelry
+Toys
+Snacks
+--- PAGE 2 ---
+A v er a g e D el iv er y  T im e b y  D is ta nc e B a nd  a nd  T r a f f ic
+100
+150
+Distance Band
+Average Delivery Time
+00–03 km 03–06 km 06–09 km 09–12 km 12–15 km 15–18 km 18–21 km
+T r a f f i c J a m L ow M e d iu m H ig h
+Order_Date
+2/11/2022  4/6/2022 
+V ehicl e
+A ll 
+Category
+A ll 
+A r e a J a m
+ 
+L ow
+ 
+M e d iu m
+ 
+H ig h
+ 
+T o t a l
+M e t r op ol it a n 4 3 .7 % 7 .3 % 2 6 .7 % 2 4 .9 % 2 5 . 9 %
+O t h e r 2 0 .3 % 2 .8 % 1 6 .3 % 1 8 .9 % 1 1 . 4 %
+S e m i- U r b a n 9 5 .2 %   8 0 .0 % 1 0 0 .0 % 9 4 . 7 %
+U r b a n 2 9 .4 % 3 .1 % 1 5 .2 % 1 4 .6 % 1 3 . 9 %
+T o t a l 4 1 . 0 % 6 . 0 % 2 4 . 0 % 2 2 . 8 % 2 3 . 1 %
+A v er a g e Pi c k u p  D el a y  b y  T r a f f ic
+0 5 10
+Traffic
+Jam
+Low
+Medium
+High
+D a y _N a m e 0
+ 
+8
+ 
+9
+ 
+1 0
+ 
+1 1
+ 
+1 2
+ 
+1 3
+ 
+1 4
+ 
+1 5
+ 
+1 6
+ 
+1 7
+ 
+1 8
+ 
+1 9
+ 
+2 0
+ 
+2 1
+ 
+2 2
+ 
+2 3
+ 
+T o t a l
+M ond a y 1 0 6 .4 6 9 2 .8 4 9 2 .9 1 9 4 .1 1 1 2 1 .4 2 1 2 9 .6 0 1 3 1 .5 5 1 2 5 .5 5 1 0 9 .1 5 1 1 1 .8 1 1 3 1 .5 0 1 2 9 .0 4 1 4 6 .9 5 1 5 0 .3 9 1 4 3 .7 3 1 1 0 .4 5 1 0 7 .8 9 1 2 4 . 7 9
+T u e s d a y 1 0 0 .5 6 8 9 .5 4 9 1 .4 0 9 2 .5 2 1 2 4 .6 3 1 2 8 .5 3 1 3 0 .6 1 1 3 1 .7 2 1 0 9 .0 7 1 0 8 .6 1 1 2 5 .0 2 1 2 6 .1 0 1 4 4 .8 1 1 4 8 .0 8 1 4 2 .1 5 1 0 3 .3 3 1 0 4 .3 3 1 2 0 . 3 0
+W e d n e s d a y 1 1 6 .0 5 9 1 .9 6 9 4 .8 7 9 5 .7 1 1 2 3 .8 9 1 2 3 .8 5 1 4 1 .7 9 1 3 2 .9 0 1 0 7 .0 3 1 1 5 .6 3 1 3 4 .0 9 1 3 7 .4 1 1 5 1 .1 7 1 5 0 .7 2 1 5 2 .9 5 1 1 4 .8 5 1 0 8 .6 8 1 3 1 . 7 1
+T h u r s d a y 9 8 .3 7 9 5 .5 7 9 1 .5 0 9 3 .3 7 1 2 8 .8 0 1 2 5 .6 0 1 3 3 .0 8 1 3 1 .8 0 1 1 4 .2 6 1 0 9 .5 7 1 2 0 .9 1 1 2 2 .8 6 1 4 0 .3 3 1 4 2 .8 1 1 4 0 .0 1 1 0 6 .7 6 1 0 5 .5 5 1 1 9 . 7 8
+Fr id a y 9 0 .4 8 9 7 .9 3 9 1 .8 9 9 2 .8 5 1 2 4 .0 0 1 2 7 .1 3 1 2 7 .2 9 1 2 6 .1 5 1 1 3 .9 2 1 1 0 .3 8 1 3 2 .7 8 1 2 9 .5 7 1 5 0 .0 1 1 4 7 .0 9 1 5 0 .3 9 1 1 1 .6 7 1 0 9 .5 1 1 2 6 . 9 0
+S a t u r d a y 1 1 1 .3 4 9 1 .9 8 9 4 .2 7 9 2 .2 0 1 2 8 .7 3 1 3 1 .7 3 1 3 1 .1 0 1 3 3 .8 7 1 0 9 .6 6 1 0 5 .2 5 1 3 0 .4 3 1 2 7 .8 9 1 4 4 .8 9 1 4 9 .4 1 1 4 7 .9 8 1 0 9 .9 0 1 0 6 .9 4 1 2 4 . 9 8
+S u n d a y 1 0 3 .5 0 9 1 .3 9 9 1 .9 7 9 1 .3 2 1 2 4 .7 3 1 3 2 .0 2 1 2 6 .1 9 1 3 0 .7 6 1 0 4 .4 0 1 0 7 .2 6 1 3 2 .7 5 1 2 9 .6 8 1 4 5 .5 8 1 5 0 .5 7 1 4 4 .3 1 1 1 3 .8 6 1 0 6 .8 5 1 2 4 . 9 4
+T o t a l 1 0 3 . 6 4 9 3 . 0 4 9 2 . 5 2 9 3 . 0 2 1 2 5 . 4 1 1 2 8 . 4 9 1 3 1 . 4 0 1 3 0 . 3 6 1 0 9 . 9 4 1 0 9 . 4 7 1 3 0 . 0 4 1 2 9 . 3 7 1 4 6 . 7 3 1 4 8 . 6 0 1 4 6 . 4 3 1 1 0 . 4 0 1 0 7 . 2 8 1 2 4 . 9 1
+--- PAGE 3 ---
+Order_Date
+2/11/2022  4/6/2022 
+T raffic
+A ll 
+Area
+A ll 
+A v erage Deliv ery T ime by A gent Rating
+0
+50
+100
+150
+200
+Rating_Group
+Average Delivery Time
+Below 4.0 4.0-4.4 4.8-5.0 4.5-4.7
+174 165
+116 115
+A v er a g e D el iv er y  T im e b y  A g ent A g e G r ou p
+0 50 100 150
+Average Delivery Time
+Age_Group
+30-34
+35-39
+20-24
+25-29
+L ong  D el iv er y  R a te b y  Ca teg or y
+0% 10% 20% 30%
+Long Delivery Rate
+Category
+Cosmetics
+Kitchen
+Sports
+Apparel
+Skincare
+Snacks
+Books
+Jewelry
+Electronics
+26.1%
+25.8%
+25.2%
+25.1%
+25.1%
+24.9%
+24.6%
+24.3%
+24.2%
+A v er a g e A g ent R a ti ng  b y  Ca teg or y
+0
+2
+4
+Category
+Average Agent Rating
+ShoesOutdoorsClothingBooks
+Pet SuppliesSkincareElectronics
+ToysKitchenGroceryJewelryApparelCosmeticsSnacksHomeSports
+4.6 4.6 4.6 4.6 4.6 4.6 4.6 4.6 4.6 4.6 4.6 4.6 4.6 4.6 4.6 4.6
+--- PAGE 4 ---
+Order_Date
+2/11/2022  4/6/2022 
+Area
+A l l 
+V ehicl e
+A l l 
+T raffic
+A l l 
+A v er a g e D el iv er y  T im e b y  W ea ther
+0 50 100
+Average Delivery Time
+Weather
+Cloudy
+Fog
+Windy
+Sandstorms
+Stormy
+Sunny
+L ong  D el iv er y  R a te b y  W ea ther
+0%
+10%
+20%
+30%
+40%
+Weather
+Long Delivery Rate
+Fog Cloudy Windy Stormy Sandstorms Sunny
+A v er a g e Pi c k u p  D el a y  b y  O r d er _H o u r
+9.8
+10.0
+10.2
+Order_Hour
+Average Pickup Delay
+0 5 10 15 20
+T ota l  O r d er s  b y  O r d er _H ou r
+0K
+2K
+4K
+Order_Hour
+Total Orders
+0 5 10 15 20
+--- PAGE 5 ---
+Order_Date
+2/11/2022  4/6/2022 
+T raffic
+A ll 
+W eather
+A ll 
+V ehicl e
+A ll 
+Area
+A ll 
+A verage Delivery Time
+124.91
+Long Delivery Rate
+23.1%
+L ong  D el iv er y  R a te b y  T r a f f ic
+0% 20% 40%
+Long Delivery Rate
+Traffic
+Jam
+Low
+Medium
+High
+L ong  D el iv er y  R a te b y  Ca teg or y
+0%
+10%
+20%
+30%
+Category
+Long Delivery Rate
+Sports Skincare Snacks Shoes Toys
+A r e a P 9 0  D e liv e r y  T im e A v e r a g e  P ic k u p  D e la y L ong  D e liv e r y  Ra t e
+  
+A v e r a g e  D is t a n c e A v e r a g e  D e liv e r y  T im e Tot a l O r d e r s
+S e m i- U r b a n 2 6 9 .5 0 1 0 .0 7 9 4 .7 % 1 2 .8 7 2 3 8 .5 5 1 5 2
+M e t r op ol it a n 2 0 0 .0 0 9 .9 8 2 5 .9 % 9 .9 3 1 2 9 .7 1 3 2 6 3 4
+U r b a n 1 7 5 .0 0 1 0 .0 3 1 3 .9 % 9 .0 9 1 0 9 .4 4 9 7 2 6
+O t h e r 1 6 5 .0 0 1 0 .1 1 1 1 .4 % 9 .1 9 1 0 4 .5 0 1 1 3 6
+T o t a l 1 9 5 . 0 0 9 . 9 9 2 3 . 1 % 9 . 7 3 1 2 4 . 9 1 4 3 6 4 8
+G i a o  t h ô n g  ù n  t ắ c  c ó  t ỷ  l ệ  g i a o  h à n g  k é o  
+d à i  v à  t h ờ i  g i a n  g i a o  h à n g  t r u n g  b ì n h  
+c a o  n h ấ t .
+• K h u  v ự c  S e m i - U r b a n  c ó  t ỷ  l ệ  g i a o  
+h à n g  k é o  d à i  r ấ t  c a o , n h ư n g  s ố  l ư ợ n g  
+đ ơ n  h à n g  í t  n ê n  c ầ n  x e m  đ â y  l à  m ộ t  
+đ i ể m  b ấ t  t h ư ờ n g  c ầ n  p h â n  t í c h  t h ê m .
+• T h ờ i  g i a n  g i a o  h à n g  c ó  x u  h ư ớ n g  
+t ă n g  k h i  k h o ả n g  c á c h  g i a o  h à n g  t ă n g ;  
+t h ờ i  g i a n  c h ờ  l ấ y  h à n g  c ũ n g  l à  m ộ t  
+y ế u  t ố  v ậ n  h à n h  c ầ n  t h e o  d õ i .
+K ế t  l u ậ n
+C ầ n  ư u  t i ê n  t ố i  ư u  g i a o  h à n g  t r o n g  c á c  
+k h u n g  g i ờ  ù n  t ắ c , g i ả m  t h ờ i  g i a n  c h ờ  l ấ y  
+h à n g  v à  t ậ p  t r u n g  p h â n  t í c h  c á c  k h u  v ự c  
+h o ặ c  n h ó m  đ ơ n  h à n g  c ó  r ủ i  r o  g i a o  
+c h ậ m  c a o .
