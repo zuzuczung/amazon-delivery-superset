@@ -2,6 +2,8 @@
 
 Chuyển report Power BI Amazon Delivery thành dashboard Apache Superset với **5 tab, 28 biểu đồ và 6 bộ lọc**, sử dụng PostgreSQL làm nguồn tính toán.
 
+Ngày 23/10/2026: toàn bộ 28 tên biểu đồ, nhãn metric, tên trục và tên bộ lọc đã được Việt hóa. Tên cột kỹ thuật, giá trị danh mục và công thức tính được giữ nguyên. Mapping vẫn lưu tiêu đề Power BI tiếng Anh để đối chiếu nguồn.
+
 ![Dashboard tổng quan](migration/evidence/screenshots/page-1.png)
 
 ## Kết quả
@@ -17,6 +19,12 @@ Chuyển report Power BI Amazon Delivery thành dashboard Apache Superset với 
 ## Xem dashboard
 
 Dashboard cần một Superset instance đã cấu hình. Trên máy triển khai ban đầu: [mở dashboard local](http://localhost:8088/superset/dashboard/amazon-delivery-intelligence/). Đường dẫn localhost chỉ hoạt động trên máy chạy Superset; repo GitHub không cung cấp bản dashboard web công khai.
+
+Ngày 23/10/2026: đã gỡ bộ 5 dashboard con cũ (11 trang, 55 chart) vì trùng nội dung. Migration không còn tạo lại bộ này. Dashboard chính giữ đủ 5 trang và 28 chart; bản sao khôi phục bộ đã gỡ nằm trong `migration/retired/redundant-children-2026-10-23/`.
+
+Thay thế bằng [Dashboard A · Giao kéo dài và đơn cần kiểm tra](http://localhost:8088/superset/dashboard/amazon-delivery-giao-keo-dai/) gồm 2 trang, 8 biểu đồ/bảng và 4 KPI mới: mức độ kéo dài, Pareto đóng góp, mật độ khoảng cách–thời gian và mức lệch so với nhóm tương đồng. Xem [định nghĩa, phạm vi và kiểm chứng A](docs/dashboard-a.md).
+
+[Dashboard B · So sánh phương tiện cùng điều kiện](http://localhost:8088/superset/dashboard/amazon-delivery-so-sanh-phuong-tien/) gồm 1 trang, 4 biểu đồ/bảng và 3 KPI mới. Cân bằng cơ cấu khu vực × giao thông × thời tiết × khoảng cách cho motorcycle và scooter; mẫu chung gồm 34.281 đơn (91,0%), chênh lệch đã cân bằng +15,60 phút. Đây là liên hệ quan sát, chưa chứng minh tác động của phương tiện. Xem [định nghĩa, phạm vi và kiểm chứng B](docs/dashboard-b.md).
 
 Ảnh các trang: [Trang 1](migration/evidence/screenshots/page-1.png) · [Trang 2](migration/evidence/screenshots/page-2.png) · [Trang 3](migration/evidence/screenshots/page-3.png) · [Trang 4](migration/evidence/screenshots/page-4.png) · [Trang 5](migration/evidence/screenshots/page-5.png).
 
