@@ -1,0 +1,253 @@
+{
+  "checks": [
+    {
+      "scenario": "all",
+      "chart": "severity-excess-kpi",
+      "passed": true
+    },
+    {
+      "scenario": "all",
+      "chart": "severity-severe-kpi",
+      "passed": true
+    },
+    {
+      "scenario": "all",
+      "chart": "severity-mean-excess-kpi",
+      "passed": true
+    },
+    {
+      "scenario": "all",
+      "chart": "severity-pareto",
+      "passed": true
+    },
+    {
+      "scenario": "all",
+      "chart": "severity-priority",
+      "passed": true
+    },
+    {
+      "scenario": "all",
+      "chart": "severity-levels",
+      "passed": true
+    },
+    {
+      "scenario": "all",
+      "chart": "severity-contribution",
+      "passed": true
+    },
+    {
+      "scenario": "all",
+      "chart": "exceptions-short-kpi",
+      "passed": true
+    },
+    {
+      "scenario": "all",
+      "chart": "exceptions-density",
+      "passed": true
+    },
+    {
+      "scenario": "all",
+      "chart": "exceptions-conditions",
+      "passed": true
+    },
+    {
+      "scenario": "all",
+      "chart": "exceptions-deviation",
+      "passed": true
+    },
+    {
+      "scenario": "all",
+      "chart": "exceptions-records",
+      "passed": true
+    },
+    {
+      "scenario": "grocery",
+      "chart": "severity-excess-kpi",
+      "passed": true
+    },
+    {
+      "scenario": "grocery",
+      "chart": "severity-severe-kpi",
+      "passed": true
+    },
+    {
+      "scenario": "grocery",
+      "chart": "severity-mean-excess-kpi",
+      "passed": true
+    },
+    {
+      "scenario": "grocery",
+      "chart": "severity-pareto",
+      "passed": true
+    },
+    {
+      "scenario": "grocery",
+      "chart": "severity-priority",
+      "passed": true
+    },
+    {
+      "scenario": "grocery",
+      "chart": "severity-levels",
+      "passed": true
+    },
+    {
+      "scenario": "grocery",
+      "chart": "severity-contribution",
+      "passed": true
+    },
+    {
+      "scenario": "grocery",
+      "chart": "exceptions-short-kpi",
+      "passed": true
+    },
+    {
+      "scenario": "grocery",
+      "chart": "exceptions-density",
+      "passed": true
+    },
+    {
+      "scenario": "grocery",
+      "chart": "exceptions-conditions",
+      "passed": true
+    },
+    {
+      "scenario": "grocery",
+      "chart": "exceptions-deviation",
+      "passed": true
+    },
+    {
+      "scenario": "grocery",
+      "chart": "exceptions-records",
+      "passed": true
+    },
+    {
+      "scenario": "march-jam",
+      "chart": "severity-excess-kpi",
+      "passed": true
+    },
+    {
+      "scenario": "march-jam",
+      "chart": "severity-severe-kpi",
+      "passed": true
+    },
+    {
+      "scenario": "march-jam",
+      "chart": "severity-mean-excess-kpi",
+      "passed": true
+    },
+    {
+      "scenario": "march-jam",
+      "chart": "severity-pareto",
+      "passed": true
+    },
+    {
+      "scenario": "march-jam",
+      "chart": "severity-priority",
+      "passed": true
+    },
+    {
+      "scenario": "march-jam",
+      "chart": "severity-levels",
+      "passed": true
+    },
+    {
+      "scenario": "march-jam",
+      "chart": "severity-contribution",
+      "passed": true
+    },
+    {
+      "scenario": "march-jam",
+      "chart": "exceptions-short-kpi",
+      "passed": true
+    },
+    {
+      "scenario": "march-jam",
+      "chart": "exceptions-density",
+      "passed": true
+    },
+    {
+      "scenario": "march-jam",
+      "chart": "exceptions-conditions",
+      "passed": true
+    },
+    {
+      "scenario": "march-jam",
+      "chart": "exceptions-deviation",
+      "passed": true
+    },
+    {
+      "scenario": "march-jam",
+      "chart": "exceptions-records",
+      "passed": true
+    },
+    {
+      "scenario": "empty",
+      "chart": "severity-excess-kpi",
+      "passed": true
+    },
+    {
+      "scenario": "empty",
+      "chart": "severity-severe-kpi",
+      "passed": true
+    },
+    {
+      "scenario": "empty",
+      "chart": "severity-mean-excess-kpi",
+      "passed": true
+    },
+    {
+      "scenario": "empty",
+      "chart": "severity-pareto",
+      "passed": true
+    },
+    {
+      "scenario": "empty",
+      "chart": "severity-priority",
+      "passed": true
+    },
+    {
+      "scenario": "empty",
+      "chart": "severity-levels",
+      "passed": true
+    },
+    {
+      "scenario": "empty",
+      "chart": "severity-contribution",
+      "passed": true
+    },
+    {
+      "scenario": "empty",
+      "chart": "exceptions-short-kpi",
+      "passed": true
+    },
+    {
+      "scenario": "empty",
+      "chart": "exceptions-density",
+      "passed": true
+    },
+    {
+      "scenario": "empty",
+      "chart": "exceptions-conditions",
+      "passed": true
+    },
+    {
+      "scenario": "empty",
+      "chart": "exceptions-deviation",
+      "passed": true
+    },
+    {
+      "scenario": "empty",
+      "chart": "exceptions-records",
+      "passed": true
+    }
+  ],
+  "failures": [],
+  "sql_grain_check": {
+    "n": 43648,
+    "distinct_n": 43648,
+    "excess": 366375,
+    "short_n": 873
+  },
+  "baseline": "Independent CSV grouping and median, compared with Superset REST; no raw rows retained",
+  "reference": "Fixed full-snapshot peer median, n>=30; filter selects orders, not the reference cohort"
+}

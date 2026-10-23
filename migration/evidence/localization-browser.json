@@ -1,0 +1,32 @@
+{
+  "language": "vi",
+  "pages": [
+    {
+      "page": 2,
+      "charts": 4,
+      "titles_verified": true
+    },
+    {
+      "page": 3,
+      "charts": 4,
+      "titles_verified": true
+    },
+    {
+      "page": 4,
+      "charts": 4,
+      "titles_verified": true
+    },
+    {
+      "page": 5,
+      "charts": 5,
+      "titles_verified": true
+    },
+    {
+      "page": 1,
+      "charts": 11,
+      "titles_verified": true
+    }
+  ],
+  "checked_at": "2026-10-23",
+  "notes": "Verified Vietnamese chart titles on all five tabs; original category values retained."
+}

@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-23",
+  "url": "http://localhost:8088/superset/dashboard/amazon-delivery-so-sanh-phuong-tien/",
+  "dashboard_id": 24,
+  "checks": [
+    {"check": "Default KPIs", "observed": {"adjusted_gap": "+15.60", "coverage": "91.0%", "common_orders": "34,281"}, "passed": true},
+    {"check": "Raw vs adjusted means displayed on same eligible sample", "observed": {"motorcycle": [137.88, 137.94], "scooter": [122.59, 122.34]}, "passed": true},
+    {"check": "Coverage bars include excluded orders", "observed_totals": {"motorcycle": 23936, "scooter": 13722}, "passed": true},
+    {"check": "Distribution numeric X axis preserves empty-bin spacing", "observed": "Numeric ticks -40 to 60; visible gaps between -30/-20 and 35/45", "passed": true},
+    {"check": "Table defaults to descending gap and loads all eligible groups", "observed": {"records": 207, "first_group": "Metropolitan · High · Sunny · 06–09 km", "first_gap": "+57.37"}, "passed": true},
+    {"check": "Semi-Urban lacks common support", "observed": {"adjusted_gap": "No data", "coverage": "0.0%", "common_orders": "0", "comparison_distribution_table": "No results were returned for this query"}, "passed": true},
+    {"check": "Jam + Fog applies simultaneously to all seven charts", "observed": {"adjusted_gap": "+6.51", "coverage": "94.1%", "common_orders": "1,899", "table_records": 10, "applied_filters": 2}, "passed": true},
+    {"check": "Clear all followed by Apply restores baseline", "observed": {"adjusted_gap": "+15.60", "coverage": "91.0%", "common_orders": "34,281", "table_records": 207}, "passed": true},
+    {"check": "Responsive layout", "observed": "At 919px width the first two filters remain inline and the other two move into More filters; chart labels and table remain readable", "passed": true}
+  ],
+  "screenshot": "migration/evidence/screenshots/vehicle-b.png",
+  "limitations": ["Superset built-in empty-state, search and pagination controls retain English UI text; chart titles and analytical labels are Vietnamese.", "Fifteen table records per page; the card has an internal vertical scroll at narrow widths."],
+  "final_state": "Default unfiltered dashboard, all seven charts rendered"
+}

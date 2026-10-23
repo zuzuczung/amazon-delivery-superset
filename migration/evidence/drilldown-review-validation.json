@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "sql": "WITH b AS (\n  SELECT * FROM amazon_bi.delivery_orders\n  WHERE order_date >= DATE '2022-02-11' AND order_date < DATE '2022-04-07'\n), cells AS (\n  SELECT area,traffic,weather,count(*) AS n,\n         count(*) FILTER (WHERE delivery_time>160) AS long_n,\n         sum(greatest(delivery_time-160,0)) AS excess\n  FROM b GROUP BY area,traffic,weather\n), top5 AS (\n  SELECT * FROM cells WHERE n>=200 ORDER BY excess DESC LIMIT 5\n)\nSELECT count(*) AS n,\n       count(*) FILTER (WHERE delivery_time>160) AS long_n,\n       count(*) FILTER (WHERE delivery_time>200) AS severe_n,\n       sum(greatest(delivery_time-160,0)) AS excess,\n       (SELECT sum(n) FROM top5) AS top5_n,\n       (SELECT sum(long_n) FROM top5) AS top5_long_n,\n       (SELECT sum(excess) FROM top5) AS top5_excess,\n       count(*) FILTER (WHERE distance_km<5 AND store_latitude<>0\n          AND store_longitude<>0 AND drop_latitude<>0 AND drop_longitude<>0) AS short_nonzero_n,\n       count(*) FILTER (WHERE distance_km<5 AND delivery_time>160\n          AND store_latitude<>0 AND store_longitude<>0\n          AND drop_latitude<>0 AND drop_longitude<>0) AS short_nonzero_long_n\nFROM b;",
+  "result": {
+    "n": 43648,
+    "long_n": 10070,
+    "severe_n": 3608,
+    "excess": 366375,
+    "top5_n": 9178,
+    "top5_long_n": 4479,
+    "top5_excess": 185030,
+    "short_nonzero_n": 10813,
+    "short_nonzero_long_n": 873
+  },
+  "comparison": "independent CSV Python vs PostgreSQL aggregation",
+  "source_sha256": "07fa8dec4252148f9b9d48908dadb305245c12e873f4ce81e767c4fd03a0b148"
+}

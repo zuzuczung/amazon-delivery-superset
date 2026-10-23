@@ -1,0 +1,340 @@
+{
+  "checks": [
+    {
+      "scenario": "all",
+      "chart": "gap-kpi",
+      "passed": true,
+      "groups": 1
+    },
+    {
+      "scenario": "all",
+      "chart": "coverage-kpi",
+      "passed": true,
+      "groups": 1
+    },
+    {
+      "scenario": "all",
+      "chart": "sample-kpi",
+      "passed": true,
+      "groups": 1
+    },
+    {
+      "scenario": "all",
+      "chart": "comparison",
+      "passed": true,
+      "groups": 2
+    },
+    {
+      "scenario": "all",
+      "chart": "coverage",
+      "passed": true,
+      "groups": 4
+    },
+    {
+      "scenario": "all",
+      "chart": "distribution",
+      "passed": true,
+      "groups": 16
+    },
+    {
+      "scenario": "all",
+      "chart": "groups",
+      "passed": true,
+      "groups": 207
+    },
+    {
+      "scenario": "metropolitan",
+      "chart": "gap-kpi",
+      "passed": true,
+      "groups": 1
+    },
+    {
+      "scenario": "metropolitan",
+      "chart": "coverage-kpi",
+      "passed": true,
+      "groups": 1
+    },
+    {
+      "scenario": "metropolitan",
+      "chart": "sample-kpi",
+      "passed": true,
+      "groups": 1
+    },
+    {
+      "scenario": "metropolitan",
+      "chart": "comparison",
+      "passed": true,
+      "groups": 2
+    },
+    {
+      "scenario": "metropolitan",
+      "chart": "coverage",
+      "passed": true,
+      "groups": 2
+    },
+    {
+      "scenario": "metropolitan",
+      "chart": "distribution",
+      "passed": true,
+      "groups": 14
+    },
+    {
+      "scenario": "metropolitan",
+      "chart": "groups",
+      "passed": true,
+      "groups": 132
+    },
+    {
+      "scenario": "jam-fog",
+      "chart": "gap-kpi",
+      "passed": true,
+      "groups": 1
+    },
+    {
+      "scenario": "jam-fog",
+      "chart": "coverage-kpi",
+      "passed": true,
+      "groups": 1
+    },
+    {
+      "scenario": "jam-fog",
+      "chart": "sample-kpi",
+      "passed": true,
+      "groups": 1
+    },
+    {
+      "scenario": "jam-fog",
+      "chart": "comparison",
+      "passed": true,
+      "groups": 2
+    },
+    {
+      "scenario": "jam-fog",
+      "chart": "coverage",
+      "passed": true,
+      "groups": 4
+    },
+    {
+      "scenario": "jam-fog",
+      "chart": "distribution",
+      "passed": true,
+      "groups": 7
+    },
+    {
+      "scenario": "jam-fog",
+      "chart": "groups",
+      "passed": true,
+      "groups": 10
+    },
+    {
+      "scenario": "long-distance",
+      "chart": "gap-kpi",
+      "passed": true,
+      "groups": 1
+    },
+    {
+      "scenario": "long-distance",
+      "chart": "coverage-kpi",
+      "passed": true,
+      "groups": 1
+    },
+    {
+      "scenario": "long-distance",
+      "chart": "sample-kpi",
+      "passed": true,
+      "groups": 1
+    },
+    {
+      "scenario": "long-distance",
+      "chart": "comparison",
+      "passed": true,
+      "groups": 2
+    },
+    {
+      "scenario": "long-distance",
+      "chart": "coverage",
+      "passed": true,
+      "groups": 4
+    },
+    {
+      "scenario": "long-distance",
+      "chart": "distribution",
+      "passed": true,
+      "groups": 9
+    },
+    {
+      "scenario": "long-distance",
+      "chart": "groups",
+      "passed": true,
+      "groups": 24
+    },
+    {
+      "scenario": "no-common-support",
+      "chart": "gap-kpi",
+      "passed": true,
+      "groups": 1
+    },
+    {
+      "scenario": "no-common-support",
+      "chart": "coverage-kpi",
+      "passed": true,
+      "groups": 1
+    },
+    {
+      "scenario": "no-common-support",
+      "chart": "sample-kpi",
+      "passed": true,
+      "groups": 1
+    },
+    {
+      "scenario": "no-common-support",
+      "chart": "comparison",
+      "passed": true,
+      "groups": 0
+    },
+    {
+      "scenario": "no-common-support",
+      "chart": "coverage",
+      "passed": true,
+      "groups": 2
+    },
+    {
+      "scenario": "no-common-support",
+      "chart": "distribution",
+      "passed": true,
+      "groups": 0
+    },
+    {
+      "scenario": "no-common-support",
+      "chart": "groups",
+      "passed": true,
+      "groups": 0
+    },
+    {
+      "scenario": "empty",
+      "chart": "gap-kpi",
+      "passed": true,
+      "groups": 1
+    },
+    {
+      "scenario": "empty",
+      "chart": "coverage-kpi",
+      "passed": true,
+      "groups": 1
+    },
+    {
+      "scenario": "empty",
+      "chart": "sample-kpi",
+      "passed": true,
+      "groups": 1
+    },
+    {
+      "scenario": "empty",
+      "chart": "comparison",
+      "passed": true,
+      "groups": 0
+    },
+    {
+      "scenario": "empty",
+      "chart": "coverage",
+      "passed": true,
+      "groups": 0
+    },
+    {
+      "scenario": "empty",
+      "chart": "distribution",
+      "passed": true,
+      "groups": 0
+    },
+    {
+      "scenario": "empty",
+      "chart": "groups",
+      "passed": true,
+      "groups": 0
+    }
+  ],
+  "failures": [],
+  "summaries": [
+    {
+      "scenario": "all",
+      "adjusted_gap": 15.600656579542035,
+      "coverage": 0.9103244994423496,
+      "common_orders": 34281,
+      "group_count": 432,
+      "n_motor": 23936,
+      "n_scooter": 13722,
+      "mean_motor": 137.83150902406416,
+      "mean_scooter": 122.27700043725405,
+      "group_gap": 83.75
+    },
+    {
+      "scenario": "metropolitan",
+      "adjusted_gap": 15.759637112207837,
+      "coverage": 1.0,
+      "common_orders": 28148,
+      "group_count": 132,
+      "n_motor": 18153,
+      "n_scooter": 9995,
+      "mean_motor": 142.30540406544372,
+      "mean_scooter": 128.1615807903952,
+      "group_gap": 57.373845723346705
+    },
+    {
+      "scenario": "jam-fog",
+      "adjusted_gap": 6.513764461033638,
+      "coverage": 0.9405646359583952,
+      "common_orders": 1899,
+      "group_count": 22,
+      "n_motor": 1267,
+      "n_scooter": 752,
+      "mean_motor": 187.39147592738752,
+      "mean_scooter": 179.5744680851064,
+      "group_gap": 26.666666666666657
+    },
+    {
+      "scenario": "long-distance",
+      "adjusted_gap": 18.118546798844843,
+      "coverage": 0.8610603290676416,
+      "common_orders": 3297,
+      "group_count": 61,
+      "n_motor": 2397,
+      "n_scooter": 1432,
+      "mean_motor": 156.39340842720065,
+      "mean_scooter": 137.99930167597765,
+      "group_gap": 50.0
+    },
+    {
+      "scenario": "no-common-support",
+      "adjusted_gap": null,
+      "coverage": 0.0,
+      "common_orders": 0,
+      "group_count": 39,
+      "n_motor": 132,
+      "n_scooter": 9,
+      "mean_motor": 250.11363636363637,
+      "mean_scooter": 236.66666666666666,
+      "group_gap": 26.666666666666657
+    },
+    {
+      "scenario": "empty",
+      "adjusted_gap": null,
+      "coverage": null,
+      "common_orders": 0,
+      "group_count": 0,
+      "n_motor": null,
+      "n_scooter": null,
+      "mean_motor": null,
+      "mean_scooter": null,
+      "group_gap": null
+    }
+  ],
+  "sql_grain_check": {
+    "strata": 432,
+    "distinct_strata": 432,
+    "orders": 37658,
+    "common_orders": 34281,
+    "common_strata": 207
+  },
+  "method": "Independent CSV stratum counts, means and direct standardization vs PostgreSQL and Superset",
+  "population": "Fixed snapshot 11/02–06/04/2022; non-Grocery motorcycle/scooter; >=20 per vehicle per common stratum"
+}

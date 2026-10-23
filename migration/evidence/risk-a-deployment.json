@@ -1,0 +1,21 @@
+{
+  "dashboard_id": 23,
+  "dataset_id": 42,
+  "charts": {
+    "severity-excess-kpi": 258,
+    "severity-severe-kpi": 259,
+    "severity-mean-excess-kpi": 260,
+    "severity-pareto": 261,
+    "severity-priority": 262,
+    "severity-levels": 263,
+    "severity-contribution": 264,
+    "exceptions-short-kpi": 265,
+    "exceptions-density": 266,
+    "exceptions-conditions": 267,
+    "exceptions-deviation": 268,
+    "exceptions-records": 269
+  },
+  "pages": 2,
+  "dashboard_url": "http://localhost:8088/superset/dashboard/amazon-delivery-giao-keo-dai/",
+  "uuid": "2812fc86-2b6a-513b-a166-0f5cc894c596"
+}

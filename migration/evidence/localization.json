@@ -1,0 +1,154 @@
+{
+  "language": "vi",
+  "dashboard_id": 17,
+  "charts": [
+    {
+      "id": 175,
+      "title": "Tổng số đơn hàng",
+      "queries_unchanged": true
+    },
+    {
+      "id": 176,
+      "title": "Thời gian giao hàng trung bình",
+      "queries_unchanged": true
+    },
+    {
+      "id": 177,
+      "title": "Trung vị thời gian giao hàng",
+      "queries_unchanged": true
+    },
+    {
+      "id": 178,
+      "title": "Thời gian giao hàng P90",
+      "queries_unchanged": true
+    },
+    {
+      "id": 179,
+      "title": "Khoảng cách giao hàng trung bình",
+      "queries_unchanged": true
+    },
+    {
+      "id": 180,
+      "title": "Tỷ lệ giao hàng kéo dài",
+      "queries_unchanged": true
+    },
+    {
+      "id": 181,
+      "title": "Thời gian giao hàng trung bình theo giao thông",
+      "queries_unchanged": true
+    },
+    {
+      "id": 182,
+      "title": "Tổng số đơn hàng theo phương tiện",
+      "queries_unchanged": true
+    },
+    {
+      "id": 183,
+      "title": "Thời gian giao hàng trung bình theo ngày đặt hàng",
+      "queries_unchanged": true
+    },
+    {
+      "id": 184,
+      "title": "Thời gian giao hàng trung bình theo khu vực",
+      "queries_unchanged": true
+    },
+    {
+      "id": 185,
+      "title": "Tổng số đơn hàng theo danh mục sản phẩm",
+      "queries_unchanged": true
+    },
+    {
+      "id": 186,
+      "title": "Thời gian giao hàng trung bình theo nhóm khoảng cách và giao thông",
+      "queries_unchanged": true
+    },
+    {
+      "id": 187,
+      "title": "Tỷ lệ giao hàng kéo dài theo khu vực và giao thông",
+      "queries_unchanged": true
+    },
+    {
+      "id": 188,
+      "title": "Thời gian chờ lấy hàng trung bình theo giao thông",
+      "queries_unchanged": true
+    },
+    {
+      "id": 189,
+      "title": "Thời gian giao hàng trung bình theo thứ và giờ đặt hàng",
+      "queries_unchanged": true
+    },
+    {
+      "id": 190,
+      "title": "Thời gian giao hàng trung bình theo điểm đánh giá tài xế",
+      "queries_unchanged": true
+    },
+    {
+      "id": 191,
+      "title": "Thời gian giao hàng trung bình theo nhóm tuổi tài xế",
+      "queries_unchanged": true
+    },
+    {
+      "id": 192,
+      "title": "Tỷ lệ giao hàng kéo dài theo danh mục sản phẩm",
+      "queries_unchanged": true
+    },
+    {
+      "id": 193,
+      "title": "Điểm đánh giá tài xế trung bình theo danh mục sản phẩm",
+      "queries_unchanged": true
+    },
+    {
+      "id": 194,
+      "title": "Thời gian giao hàng trung bình theo thời tiết",
+      "queries_unchanged": true
+    },
+    {
+      "id": 195,
+      "title": "Tỷ lệ giao hàng kéo dài theo thời tiết",
+      "queries_unchanged": true
+    },
+    {
+      "id": 196,
+      "title": "Thời gian chờ lấy hàng trung bình theo giờ đặt hàng",
+      "queries_unchanged": true
+    },
+    {
+      "id": 197,
+      "title": "Tổng số đơn hàng theo giờ đặt hàng",
+      "queries_unchanged": true
+    },
+    {
+      "id": 198,
+      "title": "Thời gian giao hàng trung bình",
+      "queries_unchanged": true
+    },
+    {
+      "id": 199,
+      "title": "Tỷ lệ giao hàng kéo dài",
+      "queries_unchanged": true
+    },
+    {
+      "id": 200,
+      "title": "Tỷ lệ giao hàng kéo dài theo giao thông",
+      "queries_unchanged": true
+    },
+    {
+      "id": 201,
+      "title": "Tỷ lệ giao hàng kéo dài theo danh mục sản phẩm",
+      "queries_unchanged": true
+    },
+    {
+      "id": 202,
+      "title": "Tổng hợp hiệu suất giao hàng theo khu vực",
+      "queries_unchanged": true
+    }
+  ],
+  "sql_and_queries_unchanged": true,
+  "dataset_ids": [
+    37,
+    38,
+    39,
+    40
+  ],
+  "backup": "migration/evidence/localization-before.json"
+}

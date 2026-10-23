@@ -1,0 +1,615 @@
+{
+  "source": "data/amazon_delivery_cleaned.csv",
+  "sha256": "07fa8dec4252148f9b9d48908dadb305245c12e873f4ce81e767c4fd03a0b148",
+  "period": [
+    "2022-02-11",
+    "2022-04-06"
+  ],
+  "grain": "one order",
+  "overall": {
+    "n": 43648,
+    "long": 10070,
+    "severe": 3608,
+    "excess_minutes": 366375.0,
+    "avg": 124.91447489002933,
+    "p10": 60.0,
+    "p90": 195.0,
+    "p95": 215.0,
+    "sd": 51.93256789972336,
+    "long_rate": 0.23070931085043989
+  },
+  "quality": {
+    "duplicate_ids": 0,
+    "missing_ratings": 54,
+    "zero_coordinates": 3495,
+    "long_flag_mismatches": 0
+  },
+  "by_area": [
+    {
+      "Area": "Urban",
+      "n": 9726,
+      "long": 1356,
+      "severe": 441,
+      "excess_minutes": 46330.0,
+      "avg": 109.44262800740283,
+      "p10": 55.0,
+      "p90": 175.0,
+      "p95": 200.0,
+      "sd": 48.213009574703754,
+      "long_rate": 0.13942011104256632
+    },
+    {
+      "Area": "Metropolitan",
+      "n": 32634,
+      "long": 8440,
+      "severe": 2990,
+      "excess_minutes": 303285.0,
+      "avg": 129.7069620641049,
+      "p10": 65.0,
+      "p90": 200.0,
+      "p95": 220.0,
+      "sd": 51.59197035613449,
+      "long_rate": 0.2586259729116872
+    },
+    {
+      "Area": "Semi-Urban",
+      "n": 152,
+      "long": 144,
+      "severe": 144,
+      "excess_minutes": 12840.0,
+      "avg": 238.55263157894737,
+      "p10": 230.0,
+      "p90": 269.5,
+      "p95": 270.0,
+      "sd": 46.87831244067259,
+      "long_rate": 0.9473684210526315
+    },
+    {
+      "Area": "Other",
+      "n": 1136,
+      "long": 130,
+      "severe": 33,
+      "excess_minutes": 3920.0,
+      "avg": 104.49911971830986,
+      "p10": 50.0,
+      "p90": 165.0,
+      "p95": 190.0,
+      "sd": 45.95634792624477,
+      "long_rate": 0.11443661971830986
+    }
+  ],
+  "by_traffic": [
+    {
+      "Traffic": "High",
+      "n": 4296,
+      "long": 981,
+      "severe": 249,
+      "excess_minutes": 29265.0,
+      "avg": 129.42411545623835,
+      "p10": 65.0,
+      "p90": 185.0,
+      "p95": 210.0,
+      "sd": 48.26837427092008,
+      "long_rate": 0.22835195530726257
+    },
+    {
+      "Traffic": "Jam",
+      "n": 13725,
+      "long": 5628,
+      "severe": 2553,
+      "excess_minutes": 236605.0,
+      "avg": 147.75897996357014,
+      "p10": 75.0,
+      "p90": 220.0,
+      "p95": 240.0,
+      "sd": 56.81170426738337,
+      "long_rate": 0.41005464480874315
+    },
+    {
+      "Traffic": "Low",
+      "n": 14999,
+      "long": 905,
+      "severe": 202,
+      "excess_minutes": 25250.0,
+      "avg": 101.3545569704647,
+      "p10": 55.0,
+      "p90": 145.0,
+      "p95": 170.0,
+      "sd": 38.801436414561515,
+      "long_rate": 0.06033735582372158
+    },
+    {
+      "Traffic": "Medium",
+      "n": 10628,
+      "long": 2556,
+      "severe": 604,
+      "excess_minutes": 75255.0,
+      "avg": 126.83966879939781,
+      "p10": 65.0,
+      "p90": 190.0,
+      "p95": 205.0,
+      "sd": 48.707628581291054,
+      "long_rate": 0.24049680090327438
+    }
+  ],
+  "joint_cells": [
+    {
+      "Area": "Metropolitan",
+      "Traffic": "Jam",
+      "Weather": "Fog",
+      "n": 1955,
+      "long": 1288,
+      "severe": 643,
+      "excess_minutes": 57270.0,
+      "avg": 174.8398976982097,
+      "p10": 115.0,
+      "p90": 235.0,
+      "p95": 245.0,
+      "sd": 52.92568204509398,
+      "long_rate": 0.6588235294117647
+    },
+    {
+      "Area": "Metropolitan",
+      "Traffic": "Jam",
+      "Weather": "Cloudy",
+      "n": 1866,
+      "long": 1196,
+      "severe": 610,
+      "excess_minutes": 53580.0,
+      "avg": 174.2433011789925,
+      "p10": 115.0,
+      "p90": 235.0,
+      "p95": 243.75,
+      "sd": 51.80547102494244,
+      "long_rate": 0.6409431939978564
+    },
+    {
+      "Area": "Metropolitan",
+      "Traffic": "Jam",
+      "Weather": "Windy",
+      "n": 1781,
+      "long": 683,
+      "severe": 256,
+      "excess_minutes": 25465.0,
+      "avg": 146.61875350926445,
+      "p10": 80.0,
+      "p90": 215.0,
+      "p95": 230.0,
+      "sd": 51.96654937153153,
+      "long_rate": 0.38349241998877037
+    },
+    {
+      "Area": "Metropolitan",
+      "Traffic": "Jam",
+      "Weather": "Sandstorms",
+      "n": 1814,
+      "long": 672,
+      "severe": 253,
+      "excess_minutes": 25085.0,
+      "avg": 145.44818081587653,
+      "p10": 75.0,
+      "p90": 210.0,
+      "p95": 230.0,
+      "sd": 52.55479960917642,
+      "long_rate": 0.37045203969129
+    },
+    {
+      "Area": "Metropolitan",
+      "Traffic": "Jam",
+      "Weather": "Stormy",
+      "n": 1762,
+      "long": 640,
+      "severe": 224,
+      "excess_minutes": 23630.0,
+      "avg": 144.8688989784336,
+      "p10": 75.0,
+      "p90": 210.0,
+      "p95": 225.0,
+      "sd": 51.593620291145385,
+      "long_rate": 0.36322360953461974
+    }
+  ],
+  "top5": {
+    "n": 9178,
+    "long": 4479,
+    "excess_minutes": 185030.0,
+    "order_share": 0.21027309384164222,
+    "long_share": 0.4447864945382324,
+    "excess_share": 0.5050290003411805
+  },
+  "short_routes": {
+    "n": 11746,
+    "long": 936,
+    "severe": 195,
+    "excess_minutes": 24175.0,
+    "avg": 105.38872807764345,
+    "p10": 55.0,
+    "p90": 155.0,
+    "p95": 170.0,
+    "sd": 41.58932325635958,
+    "long_rate": 0.07968670185595096,
+    "long_share": 0.0929493545183714
+  },
+  "short_routes_nonzero_coordinates": {
+    "n": 10813,
+    "long": 873,
+    "severe": 185,
+    "excess_minutes": 22640.0,
+    "avg": 105.57393877739757,
+    "p10": 55.0,
+    "p90": 155.0,
+    "p95": 170.0,
+    "sd": 41.72259364749458,
+    "long_rate": 0.08073615092943678
+  },
+  "pickup": {
+    "groups": [
+      {
+        "Pickup_Delay_Min": "15",
+        "n": 14541,
+        "long": 3287,
+        "severe": 1154,
+        "excess_minutes": 118250.0,
+        "avg": 124.18086789079156,
+        "p10": 60.0,
+        "p90": 195.0,
+        "p95": 215.0,
+        "sd": 51.7589544167645,
+        "long_rate": 0.2260504779588749
+      },
+      {
+        "Pickup_Delay_Min": "5",
+        "n": 14617,
+        "long": 3392,
+        "severe": 1253,
+        "excess_minutes": 124945.0,
+        "avg": 125.3647807347609,
+        "p10": 60.0,
+        "p90": 195.0,
+        "p95": 215.0,
+        "sd": 51.93370387011331,
+        "long_rate": 0.23205856194841623
+      },
+      {
+        "Pickup_Delay_Min": "10",
+        "n": 14490,
+        "long": 3391,
+        "severe": 1201,
+        "excess_minutes": 123180.0,
+        "avg": 125.19641131815045,
+        "p10": 60.0,
+        "p90": 195.0,
+        "p95": 215.0,
+        "sd": 52.09715999552119,
+        "long_rate": 0.23402346445824707
+      }
+    ],
+    "avg_gap": 1.1839128439693383
+  },
+  "categories": {
+    "groups": [
+      {
+        "Category": "Clothing",
+        "n": 2662,
+        "long": 637,
+        "severe": 247,
+        "excess_minutes": 23915.0,
+        "avg": 130.48647633358377,
+        "p10": 75.0,
+        "p90": 200.0,
+        "p95": 220.0,
+        "sd": 47.3003138402583,
+        "long_rate": 0.23929376408715253
+      },
+      {
+        "Category": "Electronics",
+        "n": 2843,
+        "long": 689,
+        "severe": 215,
+        "excess_minutes": 23325.0,
+        "avg": 130.87231797397115,
+        "p10": 75.0,
+        "p90": 195.0,
+        "p95": 215.0,
+        "sd": 45.28503020983941,
+        "long_rate": 0.24234963067182555
+      },
+      {
+        "Category": "Sports",
+        "n": 2711,
+        "long": 682,
+        "severe": 206,
+        "excess_minutes": 22900.0,
+        "avg": 132.31648838067133,
+        "p10": 75.0,
+        "p90": 195.0,
+        "p95": 215.0,
+        "sd": 45.175800921762075,
+        "long_rate": 0.2515676872002951
+      },
+      {
+        "Category": "Cosmetics",
+        "n": 2670,
+        "long": 698,
+        "severe": 237,
+        "excess_minutes": 25335.0,
+        "avg": 132.90074906367042,
+        "p10": 75.0,
+        "p90": 200.0,
+        "p95": 220.0,
+        "sd": 47.32827700944066,
+        "long_rate": 0.2614232209737828
+      },
+      {
+        "Category": "Toys",
+        "n": 2773,
+        "long": 647,
+        "severe": 246,
+        "excess_minutes": 24345.0,
+        "avg": 129.36891453299674,
+        "p10": 75.0,
+        "p90": 200.0,
+        "p95": 220.0,
+        "sd": 47.181450695523665,
+        "long_rate": 0.23332131265777137
+      },
+      {
+        "Category": "Snacks",
+        "n": 2767,
+        "long": 689,
+        "severe": 259,
+        "excess_minutes": 25325.0,
+        "avg": 131.86483556198047,
+        "p10": 75.0,
+        "p90": 200.0,
+        "p95": 220.0,
+        "sd": 47.21758510121087,
+        "long_rate": 0.2490061438380918
+      },
+      {
+        "Category": "Shoes",
+        "n": 2661,
+        "long": 633,
+        "severe": 229,
+        "excess_minutes": 22920.0,
+        "avg": 131.11048478015783,
+        "p10": 75.0,
+        "p90": 195.0,
+        "p95": 215.0,
+        "sd": 46.284512672099474,
+        "long_rate": 0.237880496054115
+      },
+      {
+        "Category": "Apparel",
+        "n": 2722,
+        "long": 682,
+        "severe": 264,
+        "excess_minutes": 25500.0,
+        "avg": 132.03159441587067,
+        "p10": 75.0,
+        "p90": 200.0,
+        "p95": 220.0,
+        "sd": 47.1970219847849,
+        "long_rate": 0.2505510653930933
+      },
+      {
+        "Category": "Jewelry",
+        "n": 2796,
+        "long": 680,
+        "severe": 236,
+        "excess_minutes": 24865.0,
+        "avg": 130.74570815450645,
+        "p10": 75.0,
+        "p90": 200.0,
+        "p95": 215.0,
+        "sd": 46.98194718621599,
+        "long_rate": 0.24320457796852646
+      },
+      {
+        "Category": "Outdoors",
+        "n": 2741,
+        "long": 660,
+        "severe": 248,
+        "excess_minutes": 24535.0,
+        "avg": 131.152863918278,
+        "p10": 75.0,
+        "p90": 200.0,
+        "p95": 220.0,
+        "sd": 46.69428681349447,
+        "long_rate": 0.24078803356439255
+      },
+      {
+        "Category": "Grocery",
+        "n": 2688,
+        "long": 0,
+        "severe": 0,
+        "excess_minutes": 0,
+        "avg": 26.54092261904762,
+        "p10": 15.0,
+        "p90": 40.0,
+        "p95": 44.0,
+        "sd": 9.498227797417329,
+        "long_rate": 0.0
+      },
+      {
+        "Category": "Books",
+        "n": 2817,
+        "long": 693,
+        "severe": 248,
+        "excess_minutes": 25290.0,
+        "avg": 131.05431309904154,
+        "p10": 75.0,
+        "p90": 200.0,
+        "p95": 215.0,
+        "sd": 46.940353280490044,
+        "long_rate": 0.24600638977635783
+      },
+      {
+        "Category": "Kitchen",
+        "n": 2667,
+        "long": 689,
+        "severe": 218,
+        "excess_minutes": 24270.0,
+        "avg": 132.34533183352082,
+        "p10": 75.0,
+        "p90": 195.0,
+        "p95": 215.0,
+        "sd": 46.9666889644561,
+        "long_rate": 0.2583427071616048
+      },
+      {
+        "Category": "Home",
+        "n": 2680,
+        "long": 648,
+        "severe": 257,
+        "excess_minutes": 24560.0,
+        "avg": 130.96268656716418,
+        "p10": 75.0,
+        "p90": 200.0,
+        "p95": 220.0,
+        "sd": 47.48670775783345,
+        "long_rate": 0.2417910447761194
+      },
+      {
+        "Category": "Pet Supplies",
+        "n": 2684,
+        "long": 650,
+        "severe": 236,
+        "excess_minutes": 23520.0,
+        "avg": 131.35059612518629,
+        "p10": 75.0,
+        "p90": 195.0,
+        "p95": 215.0,
+        "sd": 46.684521192989685,
+        "long_rate": 0.2421758569299553
+      },
+      {
+        "Category": "Skincare",
+        "n": 2766,
+        "long": 693,
+        "severe": 262,
+        "excess_minutes": 25770.0,
+        "avg": 132.08062183658714,
+        "p10": 75.0,
+        "p90": 200.0,
+        "p95": 220.0,
+        "sd": 47.30289248557605,
+        "long_rate": 0.25054229934924077
+      }
+    ],
+    "non_grocery_avg_range": [
+      129.36891453299674,
+      132.90074906367042
+    ]
+  },
+  "vehicle_standardization_all": {
+    "strata": 214,
+    "common_n": 36892,
+    "total_eligible": 40126,
+    "coverage": 0.9194038777849773,
+    "minimum_per_vehicle_per_stratum": 20,
+    "adjustment": [
+      "Area",
+      "Traffic",
+      "Weather",
+      "distance_band"
+    ],
+    "estimates": [
+      {
+        "vehicle": "motorcycle",
+        "common_sample": 23449,
+        "common_unadjusted": 130.9496353789074,
+        "adjusted_avg": 130.96178032444564
+      },
+      {
+        "vehicle": "scooter",
+        "common_sample": 13443,
+        "common_unadjusted": 116.50040913486573,
+        "adjusted_avg": 116.35432403932354
+      }
+    ],
+    "all_unadjusted": [
+      {
+        "Vehicle": "motorcycle",
+        "n": 25519,
+        "long": 6839,
+        "severe": 2792,
+        "excess_minutes": 271400.0,
+        "avg": 131.0256671499667,
+        "p10": 65.0,
+        "p90": 205.0,
+        "p95": 225.0,
+        "sd": 53.647322364069474,
+        "long_rate": 0.2679963948430581
+      },
+      {
+        "Vehicle": "scooter",
+        "n": 14607,
+        "long": 2630,
+        "severe": 664,
+        "excess_minutes": 77265.0,
+        "avg": 116.34634079550901,
+        "p10": 55.0,
+        "p90": 185.0,
+        "p95": 200.0,
+        "sd": 48.18981806567315,
+        "long_rate": 0.18005066064215786
+      }
+    ]
+  },
+  "vehicle_standardization_non_grocery": {
+    "strata": 207,
+    "common_n": 34281,
+    "total_eligible": 37658,
+    "coverage": 0.9103244994423496,
+    "minimum_per_vehicle_per_stratum": 20,
+    "adjustment": [
+      "Area",
+      "Traffic",
+      "Weather",
+      "distance_band"
+    ],
+    "estimates": [
+      {
+        "vehicle": "motorcycle",
+        "common_sample": 21788,
+        "common_unadjusted": 137.8848448687351,
+        "adjusted_avg": 137.9436869922209
+      },
+      {
+        "vehicle": "scooter",
+        "common_sample": 12493,
+        "common_unadjusted": 122.59105098855359,
+        "adjusted_avg": 122.343030412679
+      }
+    ],
+    "all_unadjusted": [
+      {
+        "Vehicle": "motorcycle",
+        "n": 23936,
+        "long": 6839,
+        "severe": 2792,
+        "excess_minutes": 271400.0,
+        "avg": 137.83150902406416,
+        "p10": 80.0,
+        "p90": 210.0,
+        "p95": 230.0,
+        "sd": 48.11847543967516,
+        "long_rate": 0.2857202540106952
+      },
+      {
+        "Vehicle": "scooter",
+        "n": 13722,
+        "long": 2630,
+        "severe": 664,
+        "excess_minutes": 77265.0,
+        "avg": 122.27700043725405,
+        "p10": 70.0,
+        "p90": 185.0,
+        "p95": 200.0,
+        "sd": 43.436187500626296,
+        "long_rate": 0.19166302288296166
+      }
+    ]
+  }
+}

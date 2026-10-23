@@ -1,0 +1,21 @@
+{
+  "dashboard_id": 24,
+  "datasets": {
+    "strata": 43,
+    "vehicles": 44
+  },
+  "charts": {
+    "gap-kpi": 270,
+    "coverage-kpi": 271,
+    "sample-kpi": 272,
+    "comparison": 273,
+    "coverage": 274,
+    "distribution": 275,
+    "groups": 276
+  },
+  "dashboard_url": "http://localhost:8088/superset/dashboard/amazon-delivery-so-sanh-phuong-tien/",
+  "pages": 1,
+  "uuid": "344ce46c-b448-58c4-a141-44ca92c8d5f7",
+  "main_and_a_charts_unchanged": 40,
+  "dashboard_a_unchanged": true
+}

@@ -1,0 +1,129 @@
+{
+  "dataset_id": 41,
+  "dashboards": {
+    "child-area": {
+      "id": 18,
+      "uuid": "b7089a99-9dfa-5cff-a451-f2ee426c7ba7",
+      "title": "Amazon Delivery · Phân tích khu vực",
+      "slug": "amazon-delivery-khu-vuc",
+      "url": "http://localhost:8088/superset/dashboard/amazon-delivery-khu-vuc/",
+      "pages": [
+        "So sánh khu vực",
+        "Chi tiết khu vực"
+      ],
+      "charts": 10
+    },
+    "child-conditions": {
+      "id": 19,
+      "uuid": "e0b1ab31-1e1a-5914-b033-d815c13cea65",
+      "title": "Amazon Delivery · Điều kiện và thời điểm giao",
+      "slug": "amazon-delivery-dieu-kien-thoi-diem",
+      "url": "http://localhost:8088/superset/dashboard/amazon-delivery-dieu-kien-thoi-diem/",
+      "pages": [
+        "Giao thông",
+        "Thời tiết",
+        "Ngày và khung giờ"
+      ],
+      "charts": 15
+    },
+    "child-distance": {
+      "id": 20,
+      "uuid": "993ddaae-9163-5212-9015-0eac735b2c56",
+      "title": "Amazon Delivery · Khoảng cách và chờ lấy hàng",
+      "slug": "amazon-delivery-khoang-cach-cho-lay-hang",
+      "url": "http://localhost:8088/superset/dashboard/amazon-delivery-khoang-cach-cho-lay-hang/",
+      "pages": [
+        "Khoảng cách",
+        "Chờ lấy hàng"
+      ],
+      "charts": 10
+    },
+    "child-vehicle-product": {
+      "id": 21,
+      "uuid": "ce73ecd2-3c09-5045-a71f-63e641f3a12d",
+      "title": "Amazon Delivery · Phương tiện và sản phẩm",
+      "slug": "amazon-delivery-phuong-tien-san-pham",
+      "url": "http://localhost:8088/superset/dashboard/amazon-delivery-phuong-tien-san-pham/",
+      "pages": [
+        "Phương tiện",
+        "Danh mục sản phẩm"
+      ],
+      "charts": 10
+    },
+    "child-driver": {
+      "id": 22,
+      "uuid": "382dd603-8f7a-5c75-bb7c-ad67dc1ce2c5",
+      "title": "Amazon Delivery · Hồ sơ tài xế",
+      "slug": "amazon-delivery-ho-so-tai-xe",
+      "url": "http://localhost:8088/superset/dashboard/amazon-delivery-ho-so-tai-xe/",
+      "pages": [
+        "Điểm đánh giá",
+        "Độ tuổi"
+      ],
+      "charts": 10
+    }
+  },
+  "charts": {
+    "child-area-overview-orders": 203,
+    "child-area-overview-avg-time": 204,
+    "child-area-overview-avg-area": 205,
+    "child-area-overview-long-area": 206,
+    "child-area-overview-area-table": 207,
+    "child-area-detail-p90": 208,
+    "child-area-detail-long-rate": 209,
+    "child-area-detail-daily": 210,
+    "child-area-detail-traffic-area": 211,
+    "child-area-detail-weather-area": 212,
+    "child-conditions-traffic-avg-time": 213,
+    "child-conditions-traffic-p90": 214,
+    "child-conditions-traffic-avg-traffic": 215,
+    "child-conditions-traffic-long-traffic": 216,
+    "child-conditions-traffic-traffic-area": 217,
+    "child-conditions-weather-orders": 218,
+    "child-conditions-weather-long-rate": 219,
+    "child-conditions-weather-avg-weather": 220,
+    "child-conditions-weather-long-weather": 221,
+    "child-conditions-weather-weather-traffic": 222,
+    "child-conditions-time-avg-time": 223,
+    "child-conditions-time-pickup": 224,
+    "child-conditions-time-weekday-hour": 225,
+    "child-conditions-time-avg-hour": 226,
+    "child-conditions-time-long-hour": 227,
+    "child-distance-distance-distance": 228,
+    "child-distance-distance-p90": 229,
+    "child-distance-distance-avg-distance": 230,
+    "child-distance-distance-long-distance": 231,
+    "child-distance-distance-orders-distance": 232,
+    "child-distance-pickup-pickup": 233,
+    "child-distance-pickup-long-rate": 234,
+    "child-distance-pickup-avg-pickup-band": 235,
+    "child-distance-pickup-pickup-hour": 236,
+    "child-distance-pickup-pickup-traffic": 237,
+    "child-vehicle-product-vehicle-orders": 238,
+    "child-vehicle-product-vehicle-avg-time": 239,
+    "child-vehicle-product-vehicle-orders-vehicle": 240,
+    "child-vehicle-product-vehicle-avg-vehicle": 241,
+    "child-vehicle-product-vehicle-vehicle-traffic": 242,
+    "child-vehicle-product-category-orders": 243,
+    "child-vehicle-product-category-long-rate": 244,
+    "child-vehicle-product-category-orders-category": 245,
+    "child-vehicle-product-category-avg-category": 246,
+    "child-vehicle-product-category-category-traffic": 247,
+    "child-driver-rating-rating": 248,
+    "child-driver-rating-avg-time": 249,
+    "child-driver-rating-avg-rating": 250,
+    "child-driver-rating-long-rating": 251,
+    "child-driver-rating-orders-rating": 252,
+    "child-driver-age-orders": 253,
+    "child-driver-age-long-rate": 254,
+    "child-driver-age-avg-age": 255,
+    "child-driver-age-p90-age": 256,
+    "child-driver-age-age-traffic": 257
+  },
+  "pages": 11,
+  "chart_count": 55,
+  "main_dashboard_id": 17,
+  "failures": [],
+  "status": "removed",
+  "removal_evidence": "migration/evidence/redundant-children-removal.json"
+}

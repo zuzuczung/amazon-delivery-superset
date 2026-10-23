@@ -1,0 +1,10 @@
+{
+  "dashboard_id": 23,
+  "pages_checked": ["Mức độ tập trung", "Đơn cần kiểm tra"],
+  "rendered_data_errors": 0,
+  "default_values": {"excess_minutes": 366375, "orders_over_200_minutes": 3608, "short_long_orders_nonzero_coordinates": 873},
+  "native_group_filter": {"group": "Metropolitan · Jam · Fog", "page_1_excess_minutes": 57270, "page_1_orders_over_200": 643, "page_2_short_long_orders": 44, "preserved_across_tabs": true, "reset_checked": true},
+  "pareto_presentation": "Ranked table with horizontal cell bars and cumulative-share column; avoids mixed-chart categorical reordering",
+  "scope_notes": ["Record table loads at most 200 orders; its search and pagination operate on these loaded rows.", "Peer median uses the fixed full snapshot and at least 30 nonzero-coordinate orders.", "Native filters select orders without changing the peer reference population."],
+  "screenshots": ["migration/evidence/screenshots/risk-a-page-1.png", "migration/evidence/screenshots/risk-a-page-2.png"]
+}

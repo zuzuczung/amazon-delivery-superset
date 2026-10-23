@@ -1,0 +1,192 @@
+{
+  "schemaVersion": 1,
+  "items": [
+    {
+      "id": "drilldown-findings",
+      "title": "Cơ sở chọn hướng phân tích chuyên sâu",
+      "queries": [
+        {
+          "id": "severity-and-concentration",
+          "source": {
+            "label": "Amazon Delivery · CSV và PostgreSQL",
+            "tables": [
+              {
+                "name": "amazon_bi.delivery_orders"
+              }
+            ],
+            "files": [
+              "amazon_delivery_cleaned.csv",
+              "spec.py",
+              "child_spec.py"
+            ],
+            "sql": "WITH b AS (\n  SELECT * FROM amazon_bi.delivery_orders\n  WHERE order_date >= DATE '2022-02-11' AND order_date < DATE '2022-04-07'\n), cells AS (\n  SELECT area,traffic,weather,count(*) AS n,\n         count(*) FILTER (WHERE delivery_time>160) AS long_n,\n         sum(greatest(delivery_time-160,0)) AS excess\n  FROM b GROUP BY area,traffic,weather\n), top5 AS (\n  SELECT * FROM cells WHERE n>=200 ORDER BY excess DESC LIMIT 5\n)\nSELECT count(*) AS n,\n       count(*) FILTER (WHERE delivery_time>160) AS long_n,\n       count(*) FILTER (WHERE delivery_time>200) AS severe_n,\n       sum(greatest(delivery_time-160,0)) AS excess,\n       (SELECT sum(n) FROM top5) AS top5_n,\n       (SELECT sum(long_n) FROM top5) AS top5_long_n,\n       (SELECT sum(excess) FROM top5) AS top5_excess,\n       count(*) FILTER (WHERE distance_km<5 AND store_latitude<>0\n          AND store_longitude<>0 AND drop_latitude<>0 AND drop_longitude<>0) AS short_nonzero_n,\n       count(*) FILTER (WHERE distance_km<5 AND delivery_time>160\n          AND store_latitude<>0 AND store_longitude<>0\n          AND drop_latitude<>0 AND drop_longitude<>0) AS short_nonzero_long_n\nFROM b;",
+            "metricDefinitions": [
+              {
+                "name": "Phút vượt mốc 160",
+                "definition": "Tổng max(thời gian giao − 160, 0), tính từ từng đơn."
+              }
+            ],
+            "caveats": [
+              "Mốc 160 phút là ngưỡng phân tích có sẵn, không phải SLA cam kết; mốc 200 phút là ngưỡng khám phá mới.",
+              "Tọa độ khác 0 chưa bảo đảm khoảng cách đã chính xác.",
+              "Các nhóm giao hàng cho thấy mối liên hệ quan sát, không chứng minh nguyên nhân."
+            ]
+          },
+          "rows": [
+            {
+              "n": 43648,
+              "long_n": 10070,
+              "severe_n": 3608,
+              "excess": 366375,
+              "top5_n": 9178,
+              "top5_long_n": 4479,
+              "top5_excess": 185030,
+              "short_nonzero_n": 10813,
+              "short_nonzero_long_n": 873
+            }
+          ],
+          "columns": [
+            "n",
+            "long_n",
+            "severe_n",
+            "excess",
+            "top5_n",
+            "top5_long_n",
+            "top5_excess",
+            "short_nonzero_n",
+            "short_nonzero_long_n"
+          ],
+          "reportingPeriod": "11/02/2022–06/04/2022",
+          "preview": {
+            "kind": "aggregate",
+            "note": "Tổng hợp toàn bộ snapshot, đối chiếu CSV với PostgreSQL."
+          }
+        }
+      ]
+    },
+    {
+      "id": "comparison-priorities",
+      "title": "Chọn hướng so sánh và loại phần trùng lặp",
+      "queries": [
+        {
+          "id": "pickup-evidence",
+          "source": {
+            "label": "Amazon Delivery · CSV",
+            "files": [
+              "amazon_delivery_cleaned.csv",
+              "analyze_drilldown_opportunities.py"
+            ],
+            "metricDefinitions": [
+              {
+                "name": "So sánh thời gian chờ",
+                "definition": "Trung bình thời gian giao theo ba mức thời gian chờ quan sát trong CSV."
+              }
+            ]
+          },
+          "rows": [
+            {
+              "Pickup_Delay_Min": "15",
+              "n": 14541,
+              "long": 3287,
+              "severe": 1154,
+              "excess_minutes": 118250.0,
+              "avg": 124.18086789079156,
+              "p10": 60.0,
+              "p90": 195.0,
+              "p95": 215.0,
+              "sd": 51.7589544167645,
+              "long_rate": 0.2260504779588749
+            },
+            {
+              "Pickup_Delay_Min": "5",
+              "n": 14617,
+              "long": 3392,
+              "severe": 1253,
+              "excess_minutes": 124945.0,
+              "avg": 125.3647807347609,
+              "p10": 60.0,
+              "p90": 195.0,
+              "p95": 215.0,
+              "sd": 51.93370387011331,
+              "long_rate": 0.23205856194841623
+            },
+            {
+              "Pickup_Delay_Min": "10",
+              "n": 14490,
+              "long": 3391,
+              "severe": 1201,
+              "excess_minutes": 123180.0,
+              "avg": 125.19641131815045,
+              "p10": 60.0,
+              "p90": 195.0,
+              "p95": 215.0,
+              "sd": 52.09715999552119,
+              "long_rate": 0.23402346445824707
+            }
+          ],
+          "columns": [
+            "Pickup_Delay_Min",
+            "n",
+            "avg"
+          ],
+          "reportingPeriod": "11/02/2022–06/04/2022",
+          "preview": {
+            "kind": "aggregate",
+            "note": "Đủ ba mức thời gian chờ quan sát được."
+          }
+        },
+        {
+          "id": "vehicle-adjustment",
+          "source": {
+            "label": "Amazon Delivery · CSV",
+            "files": [
+              "amazon_delivery_cleaned.csv",
+              "analyze_drilldown_opportunities.py"
+            ],
+            "filters": [
+              "Loại Grocery trong phép so sánh này.",
+              "Chỉ so sánh motorcycle và scooter.",
+              "Mỗi nhóm điều kiện phải có ít nhất 20 đơn cho từng phương tiện."
+            ],
+            "caveats": [
+              "Cân bằng khu vực, giao thông, thời tiết và nhóm khoảng cách 3 km; còn các yếu tố chưa được kiểm soát.",
+              "Bao phủ 34.281/37.658 đơn ngoài Grocery của hai phương tiện (91,0%).",
+              "Sự khác biệt quan sát sau cân bằng chưa chứng minh tác động nhân quả của phương tiện."
+            ]
+          },
+          "rows": [
+            {
+              "vehicle": "motorcycle",
+              "common_sample": 21788,
+              "common_unadjusted": 137.8848448687351,
+              "adjusted_avg": 137.9436869922209
+            },
+            {
+              "vehicle": "scooter",
+              "common_sample": 12493,
+              "common_unadjusted": 122.59105098855359,
+              "adjusted_avg": 122.343030412679
+            }
+          ],
+          "columns": [
+            "vehicle",
+            "common_sample",
+            "common_unadjusted",
+            "adjusted_avg"
+          ],
+          "reportingPeriod": "11/02/2022–06/04/2022",
+          "methods": [
+            {
+              "language": "python",
+              "code": "def standardized_vehicle(rows):\n    # Direct standardization on common strata; selected vehicles only.\n    vehicles=['motorcycle','scooter']\n    strata=groups(rows,['Area','Traffic','Weather','distance_band'])\n    eligible=[]\n    for key,items in strata.items():\n        by_vehicle=groups(items,['Vehicle'])\n        if all(len(by_vehicle.get((v,),[]))>=20 for v in vehicles):\n            eligible.append((key,by_vehicle))\n    common_n=sum(len(by_vehicle[(v,)]) for _,by_vehicle in eligible for v in vehicles)\n    estimates=[]\n    for v in vehicles:\n        selected=[r for _,by_vehicle in eligible for r in by_vehicle[(v,)]]\n        adjusted=sum(mean(float(r['Delivery_Time']) for r in by_vehicle[(v,)]) *\n                     sum(len(by_vehicle[(w,)]) for w in vehicles)/common_n\n                     for _,by_vehicle in eligible)\n        estimates.append(dict(vehicle=v, common_sample=len(selected),\n                              common_unadjusted=metrics(selected)['avg'],\n                              adjusted_avg=adjusted))\n    target=[r for r in rows if r['Vehicle'] in vehicles]\n    return dict(strata=len(eligible),common_n=common_n,total_eligible=len(target),\n                coverage=common_n/len(target),minimum_per_vehicle_per_stratum=20,\n                adjustment=['Area','Traffic','Weather','distance_band'],\n                estimates=estimates,\n                all_unadjusted=grouped_metrics(target,['Vehicle']))\n\n"
+            }
+          ],
+          "preview": {
+            "kind": "aggregate",
+            "note": "Trung bình thô và cân bằng trên cùng tập điều kiện so sánh."
+          }
+        }
+      ]
+    }
+  ]
+}
