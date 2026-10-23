@@ -34,10 +34,11 @@ def main():
     lines=['# Bản đồ Power BI → Apache Superset','',
         'Nguồn quyết định: `reports/amazon_delivery_dashboard.pdf`, 5 trang. Người dùng sửa phạm vi từ 4 thành 5 trang ngày 21/10/2026.',
         'Tên tab không nằm trong PDF; Trang 1–5 là nhãn vị trí, không được tuyên bố là tên gốc. `amazon_delivery_report.pdf` là bản 6 trang khác KPI và không dùng để tính toán.',
-        '', '| Trang | Visual Power BI | Field | DAX/công thức | Bộ lọc | Dataset/metric | Chart | Thông tin còn thiếu |',
-        '|---|---|---|---|---|---|---|---|']
+        'Tên biểu đồ Superset được Việt hóa; tiêu đề Power BI gốc được giữ riêng để đối chiếu. Ba bảng/ma trận không có tiêu đề trong PDF được đặt tên tiếng Việt mô tả nội dung.',
+        '', '| Trang | Visual Power BI | Tên biểu đồ Superset | Field | DAX/công thức | Bộ lọc | Dataset/metric | Chart | Thông tin còn thiếu |',
+        '|---|---|---|---|---|---|---|---|---|']
     for r in mapping:
-        values=[str(r['page']),r['source_title'],r['fields'],'DAX chưa xác minh; SQL: '+r['SQL'],r['filters'],r['dataset'],str(r['chart_id'])+' · '+r['source_kind'],r['missing']]
+        values=[str(r['page']),r['source_title'],r['superset_chart'],r['fields'],'DAX chưa xác minh; SQL: '+r['SQL'],r['filters'],r['dataset'],str(r['chart_id'])+' · '+r['source_kind'],r['missing']]
         lines.append('| '+' | '.join(x.replace('|','\\|') for x in values)+' |')
     lines+=['','## Mức bằng chứng','',
         '- **Đã xác nhận từ tệp:** thứ tự 5 trang; 28 visual số liệu và 1 khối kết luận; field, tiêu đề hiển thị, slicer, giá trị in trên PDF. CSV sạch khớp từng dòng với bảng nguồn.',

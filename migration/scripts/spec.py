@@ -4,14 +4,14 @@ Page labels are positional: original tab names and all DAX are unavailable.
 SQL metric definitions below are proposed equivalents, verified against CSV/PDF.
 """
 METRICS = {
-    'orders': ('Total Orders', 'COUNT(order_id)', ',d'),
-    'avg_time': ('Average Delivery Time', 'AVG(delivery_time)', ',.2f'),
-    'median': ('Median Delivery Time', 'PERCENTILE_CONT(0.5) WITHIN GROUP (ORDER BY delivery_time)', ',.2f'),
-    'p90': ('P90 Delivery Time', 'PERCENTILE_CONT(0.9) WITHIN GROUP (ORDER BY delivery_time)', ',.2f'),
-    'distance': ('Average Distance', 'AVG(distance_km)', ',.2f'),
-    'long_rate': ('Long Delivery Rate', 'SUM(long_delivery_flag)::numeric / NULLIF(COUNT(order_id), 0)', '.1%'),
-    'pickup': ('Average Pickup Delay', 'AVG(pickup_delay_min)', ',.2f'),
-    'rating': ('Average Agent Rating', 'AVG(agent_rating)', ',.1f'),
+    'orders': ('Tổng số đơn hàng', 'COUNT(order_id)', ',d'),
+    'avg_time': ('Thời gian giao hàng trung bình', 'AVG(delivery_time)', ',.2f'),
+    'median': ('Trung vị thời gian giao hàng', 'PERCENTILE_CONT(0.5) WITHIN GROUP (ORDER BY delivery_time)', ',.2f'),
+    'p90': ('Thời gian giao hàng P90', 'PERCENTILE_CONT(0.9) WITHIN GROUP (ORDER BY delivery_time)', ',.2f'),
+    'distance': ('Khoảng cách giao hàng trung bình', 'AVG(distance_km)', ',.2f'),
+    'long_rate': ('Tỷ lệ giao hàng kéo dài', 'SUM(long_delivery_flag)::numeric / NULLIF(COUNT(order_id), 0)', '.1%'),
+    'pickup': ('Thời gian chờ lấy hàng trung bình', 'AVG(pickup_delay_min)', ',.2f'),
+    'rating': ('Điểm đánh giá tài xế trung bình', 'AVG(agent_rating)', ',.1f'),
 }
 # Presentation aliases keep the same SQL/label while allowing the PDF's
 # yellow/red/blue single-series colors to coexist in Superset's shared palette.
@@ -95,7 +95,58 @@ DATASET_SQL = {
 
 
 def title(v):
-    return v['title'] or f"PDF · {v['key']} (visual không có tiêu đề)"
+    # Keep v['title'] as the original PDF title for provenance and crosswalks.
+    return CHART_TITLES[v['key']]
+
+
+CHART_TITLES = {
+    'p1-01': 'Tổng số đơn hàng',
+    'p1-02': 'Thời gian giao hàng trung bình',
+    'p1-03': 'Trung vị thời gian giao hàng',
+    'p1-04': 'Thời gian giao hàng P90',
+    'p1-05': 'Khoảng cách giao hàng trung bình',
+    'p1-06': 'Tỷ lệ giao hàng kéo dài',
+    'p1-07': 'Thời gian giao hàng trung bình theo giao thông',
+    'p1-08': 'Tổng số đơn hàng theo phương tiện',
+    'p1-09': 'Thời gian giao hàng trung bình theo ngày đặt hàng',
+    'p1-10': 'Thời gian giao hàng trung bình theo khu vực',
+    'p1-11': 'Tổng số đơn hàng theo danh mục sản phẩm',
+    'p2-01': 'Thời gian giao hàng trung bình theo nhóm khoảng cách và giao thông',
+    'p2-02': 'Tỷ lệ giao hàng kéo dài theo khu vực và giao thông',
+    'p2-03': 'Thời gian chờ lấy hàng trung bình theo giao thông',
+    'p2-04': 'Thời gian giao hàng trung bình theo thứ và giờ đặt hàng',
+    'p3-01': 'Thời gian giao hàng trung bình theo điểm đánh giá tài xế',
+    'p3-02': 'Thời gian giao hàng trung bình theo nhóm tuổi tài xế',
+    'p3-03': 'Tỷ lệ giao hàng kéo dài theo danh mục sản phẩm',
+    'p3-04': 'Điểm đánh giá tài xế trung bình theo danh mục sản phẩm',
+    'p4-01': 'Thời gian giao hàng trung bình theo thời tiết',
+    'p4-02': 'Tỷ lệ giao hàng kéo dài theo thời tiết',
+    'p4-03': 'Thời gian chờ lấy hàng trung bình theo giờ đặt hàng',
+    'p4-04': 'Tổng số đơn hàng theo giờ đặt hàng',
+    'p5-01': 'Thời gian giao hàng trung bình',
+    'p5-02': 'Tỷ lệ giao hàng kéo dài',
+    'p5-03': 'Tỷ lệ giao hàng kéo dài theo giao thông',
+    'p5-04': 'Tỷ lệ giao hàng kéo dài theo danh mục sản phẩm',
+    'p5-05': 'Tổng hợp hiệu suất giao hàng theo khu vực',
+}
+
+COLUMN_LABELS = {
+    'order_date': 'Ngày đặt hàng', 'order_hour': 'Giờ đặt hàng',
+    'distance_band': 'Nhóm khoảng cách', 'traffic': 'Giao thông',
+    'weather': 'Thời tiết', 'vehicle': 'Phương tiện', 'area': 'Khu vực',
+    'category': 'Danh mục sản phẩm', 'age_group': 'Nhóm tuổi tài xế',
+    'rating_group': 'Nhóm điểm đánh giá tài xế', 'matrix_area': 'Khu vực',
+    'matrix_traffic': 'Giao thông', 'matrix_day': 'Thứ trong tuần',
+    'matrix_hour': 'Giờ đặt hàng', 'weekday_sorted': 'Thứ trong tuần',
+    'delivery_band': 'Nhóm thời gian giao hàng',
+    'pickup_delay_band': 'Nhóm thời gian chờ lấy hàng',
+}
+
+METRIC_ALIAS_LABELS = {
+    'avg_time_yellow': CHART_TITLES['p1-07'],
+    'avg_time_red': CHART_TITLES['p1-09'],
+    'pickup_yellow': CHART_TITLES['p2-03'],
+}
 
 
 def visuals():

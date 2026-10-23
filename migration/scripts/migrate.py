@@ -5,14 +5,12 @@ import json
 import os
 from pathlib import Path
 from common import API, MARKER, ROOT, save, sql, sql_json, uid
-from spec import DATASET_SQL, METRICS, PAGES, CONCLUSION, metric_keys, title, visuals
+from spec import (DATASET_SQL, METRICS, PAGES, CONCLUSION, COLUMN_LABELS,
+                  METRIC_ALIAS_LABELS, metric_keys, title, visuals)
 
 
 def dataset_metrics(key):
-    names={'avg_time_yellow':'Average Delivery Time by Traffic',
-           'avg_time_red':'Average Delivery Time by Order_Date',
-           'pickup_yellow':'Average Pickup Delay by Traffic'}
-    return [dict(metric_name=k, verbose_name=names.get(k,METRICS[k][0]), expression=METRICS[k][1],
+    return [dict(metric_name=k, verbose_name=METRIC_ALIAS_LABELS.get(k,METRICS[k][0]), expression=METRICS[k][1],
                  d3format=METRICS[k][2], description='SQL equivalent proposed from CSV/PDF; original DAX unavailable')
             for k in metric_keys(key)]
 
@@ -58,7 +56,7 @@ def form(v, dataset_id):
                  xAxisForceCategorical=v['dimension']!='order_date',
                  x_axis_sort=v['dimension'] if v.get('ascending') else metric,
                  x_axis_sort_asc=bool(v.get('ascending') or v.get('horizontal')),orientation='horizontal' if v.get('horizontal') else 'vertical',
-                 x_axis_title=v['dimension'],y_axis_title=METRICS[metric][0],
+                 x_axis_title=COLUMN_LABELS.get(v['dimension'],v['dimension']),y_axis_title=METRICS[metric][0],
                  x_axis_title_margin=20,y_axis_title_margin=35,
                  x_axis_time_format='%b %d',xAxisLabelRotation=45 if v['dimension']=='category' and not v.get('horizontal') else 0,
                  truncateXAxis=True,truncate_metric=True,show_value=bool(v.get('labels')),
@@ -137,7 +135,7 @@ def filters(datasets, chartids):
         default={'extraFormData':{'time_range':'2022-02-11 : 2022-04-07'},
                  'filterState':{'value':'2022-02-11 : 2022-04-07'},'ownState':{}} if time else {
                      'extraFormData':{},'filterState':{},'ownState':{}}
-        configs.append(dict(id='NATIVE_FILTER-AMAZON-'+col,type='NATIVE_FILTER',name='Order_Date' if time else col.title(),
+        configs.append(dict(id='NATIVE_FILTER-AMAZON-'+col,type='NATIVE_FILTER',name=COLUMN_LABELS[col],
             filterType='filter_time' if time else 'filter_select',
             targets=[{}] if time else [{'datasetId':i,'column':{'name':col}} for i in datasets.values()],
             defaultDataMask=default,cascadeParentIds=[],
@@ -183,11 +181,7 @@ def main():
         metric_ids={m['metric_name']:m['id'] for m in current['metrics']}
         metrics=[{**m,**({'id':metric_ids[m['metric_name']]} if m['metric_name'] in metric_ids else {})}
                  for m in dataset_metrics(key)]
-        labels={'order_date':'Order_Date','order_hour':'Order_Hour','distance_band':'Distance Band',
-                'traffic':'Traffic','weather':'Weather','vehicle':'Vehicle','area':'Area','category':'Category',
-                'age_group':'Age_Group','rating_group':'Rating_Group',
-                'matrix_area':'Area','matrix_traffic':'Traffic','matrix_day':'Day_Name','matrix_hour':'Order_Hour'}
-        columns=[dict(id=c['id'],column_name=c['column_name'],verbose_name=labels.get(c['column_name'],c.get('verbose_name')))
+        columns=[dict(id=c['id'],column_name=c['column_name'],verbose_name=COLUMN_LABELS.get(c['column_name'],c.get('verbose_name')))
                  for c in current['columns']]
         api.request('PUT',f'dataset/{ident}',json=dict(description=MARKER+'; grain='+(
             'one order' if key=='base' else 'order × explicit total cells; group by matrix dimensions only'),
@@ -209,10 +203,10 @@ def main():
     metadata['label_colors'].update({'avg_time':'#118DFF','avg_time_yellow':'#FBE34D',
         'avg_time_red':'#D64550','pickup':'#118DFF','pickup_yellow':'#FBE34D',
         'orders':'#118DFF','long_rate':'#118DFF','rating':'#118DFF'})
-    metadata['label_colors'].update({'Average Delivery Time':'#118DFF',
-        'Average Delivery Time by Traffic':'#FBE34D','Average Delivery Time by Order_Date':'#D64550',
-        'Average Pickup Delay':'#118DFF','Average Pickup Delay by Traffic':'#FBE34D',
-        'Total Orders':'#118DFF','Long Delivery Rate':'#118DFF','Average Agent Rating':'#118DFF'})
+    metadata['label_colors'].update({METRICS[k][0]:'#118DFF'
+        for k in ['avg_time','pickup','orders','long_rate','rating']})
+    metadata['label_colors'].update({METRIC_ALIAS_LABELS[k]:color for k,color in
+        [('avg_time_yellow','#FBE34D'),('avg_time_red','#D64550'),('pickup_yellow','#FBE34D')]})
     # Single-series colors must be local; average metric appears in both yellow and blue visuals.
     css='''.dashboard-content {background:#fff;} .dashboard-chart {border:1px solid #118DFF; border-radius:2px;}
     .dashboard-component-tabs-content {background:#fff;} .header-title a {font-size:14px;line-height:18px;}'''
