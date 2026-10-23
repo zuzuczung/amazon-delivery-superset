@@ -4,6 +4,10 @@ Ngày thực hiện: 21/10/2026, Asia/Ho_Chi_Minh. Phạm vi được người d
 
 Dashboard thực tế: http://localhost:8088/superset/dashboard/amazon-delivery-intelligence/
 
+Cập nhật ngày 23/10/2026: đã Việt hóa đủ 28 tên biểu đồ cùng nhãn metric/trục/bộ lọc. Ba bảng/ma trận không có tiêu đề trong PDF được đặt tên mô tả nội dung. Mapping giữ tiêu đề Power BI gốc riêng với tên Superset; SQL, filter scope, grain và format giữ nguyên. Xem `localization.json` và `localization-browser.json` trong thư mục bằng chứng.
+
+Cùng ngày, bộ 5 dashboard con thử nghiệm (11 trang, 55 chart) đã được gỡ theo yêu cầu người dùng vì trùng nội dung với dashboard chính. Đã xóa dashboard ID 18–22, chart ID 203–257, dataset ảo riêng ID 41 và khối điều hướng sang bộ này. Dashboard chính vẫn giữ 5 trang, 28 chart, 4 dataset và bộ lọc cũ. Không thay đổi bảng nguồn PostgreSQL. Script tạo bộ cũ đã được lưu trong thư mục bản sao và gỡ khỏi migration đang dùng để tránh tự tạo lại. Bằng chứng: `migration/evidence/redundant-children-removal.json`; ZIP khôi phục đã loại credential: `migration/retired/redundant-children-2026-10-23/superset-children-backup.zip`.
+
 ## 1. Xác định vấn đề
 
 **Đã thực hiện:** chuyển 5 trang theo thứ tự PDF thành một dashboard có 5 tab. Thống kê 28 visual số liệu và một khối kết luận, không trộn bản report 6 trang. Bài toán là bảo toàn nội dung, phép tổng hợp và phạm vi bộ lọc khi thay Power BI bằng Superset.
@@ -123,7 +127,7 @@ Có thể hoàn tác tài nguyên BI qua UI/API với các ID trong deployment.j
 ## Tệp bàn giao
 
 - `migration/sql/001_delivery_orders.sql`: additive BI view và guard ownership.
-- `migration/scripts/{common,spec,profile,migrate,verify,export_dashboard,document,run_migration}.py`: quy trình tái chạy.
+- `migration/scripts/{common,spec,profile,migrate,verify,export_dashboard,document,run_migration}.py`: quy trình tái chạy dashboard chính.
 - `migration/tests/test_metric_semantics.py`: nội suy percentile, NULL, empty cohort và weighted totals.
 - `migration/exports/amazon_delivery_superset_6.zip`: export đã bỏ credential thật.
 - `.env.example`, `requirements-superset.txt`: cấu hình mẫu và dependency.

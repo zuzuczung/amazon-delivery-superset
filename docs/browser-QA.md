@@ -2,6 +2,14 @@
 
 Dashboard: http://localhost:8088/superset/dashboard/amazon-delivery-intelligence/
 
+## Cập nhật tên tiếng Việt — 23/10/2026
+
+Đã kiểm tra đủ 28 tên biểu đồ trên 5 tab, gồm nhãn KPI, tiêu đề ba bảng/ma trận, nhãn metric, tên trục và tên bộ lọc. Các ảnh `page-1.png` đến `page-5.png` được cập nhật sau khi đổi tên; những ảnh thử filter bên dưới vẫn là bằng chứng ngày 21/10 với nhãn cũ. Tiêu đề Power BI gốc được giữ trong mapping, giá trị danh mục không đổi.
+
+REST read-back xác nhận 28 tên/params đúng, truy vấn chart giữ nguyên; đối chiếu export theo UUID và metric/column name xác nhận bốn dataset chỉ đổi verbose_name, không đổi SQL, kiểu cột, format hoặc metadata khác. Bốn kiểm tra ngữ nghĩa metric vẫn đạt. Bằng chứng: `migration/evidence/localization.json`, `localization-browser.json`. Bản trước thay đổi trong `localization-before.json` phục vụ phục hồi nhãn khi cần.
+
+Script `python migration/scripts/localize.py` xem trước; thêm `--apply` để áp dụng nhãn qua REST với credential Superset đã có trong môi trường. Script không tạo lại chart/dataset hoặc thay truy vấn. Sau khi đổi nhãn, dùng `export_dashboard.py` và `document.py` để cập nhật export đã bỏ credential và mapping. Migration đầy đủ cũng sử dụng cùng nhãn tiếng Việt.
+
 Kiểm tra trên trình duyệt trong Codex, các kích thước vùng xem mặc định quan sát được khoảng 916–1384px. Ảnh là ảnh chụp dashboard chạy thật, không phải mockup. Ảnh dài chụp toàn trang sau khi chart hoàn tất chuyển động; ma trận có thể cần cuộn ngang để xem mọi cột.
 
 ## Phạm vi đã kiểm tra
